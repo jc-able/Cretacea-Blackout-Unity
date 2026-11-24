@@ -1,0 +1,283 @@
+# Final build, 2026-11-20 18:10, commit e84ece8 on lead/verify
+== 18:11:25 scenes rebuilt with NavMesh
+doors: "passed":true "passedDoors":18 "failedDoors":[] "documentsFoundCount":5 "navMeshRaptorValid":true "navMeshTRexValid":true 
+PASS console: no new errors during the run
+
+45 / 45 checks passed in 230 s
+== 18:16:17 player build
+status: completed
+result: Succeeded
+totalSizeBytes: 2621450016
+buildTimeMs: 111541
+buildEndedAt: 2026-11-20T23:18:09.3918410Z
+totalWarnings: 0
+totalErrors: 0
+== 18:26:48 self-test run 1 (1920x1080 window, saves sandboxed)
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.6 fps average, worst frame 16 ms, scene MainMenu
+MainWorld up after 2.5 s
+01_night_office: 64.5 fps average, worst frame 80 ms, scene MainWorld
+02_records_blackout: 76.4 fps average, worst frame 232 ms, scene MainWorld
+03_dock: 89.0 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 68.9 fps average, worst frame 30 ms, scene MainWorld
+05_substation: 68.4 fps average, worst frame 38 ms, scene MainWorld
+06_yard: 111.1 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 18:27:58 self-test run 2 (1920x1080 window, saves sandboxed)
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.6 fps average, worst frame 17 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 71.4 fps average, worst frame 26 ms, scene MainWorld
+02_records_blackout: 76.0 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 77.6 fps average, worst frame 25 ms, scene MainWorld
+04_paddock_valley: 79.8 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 79.7 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 79.3 fps average, worst frame 29 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 18:29:09 done
+
+# Rebuild after the Feed Prep fix, 18:45, commit e501904
+status: completed
+result: Succeeded
+totalSizeBytes: 2621450016
+buildTimeMs: 61185
+totalWarnings: 0
+totalErrors: 0
+== 18:47:22 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 117.7 fps average, worst frame 17 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 63.7 fps average, worst frame 51 ms, scene MainWorld
+02_records_blackout: 67.6 fps average, worst frame 84 ms, scene MainWorld
+03_dock: 79.5 fps average, worst frame 30 ms, scene MainWorld
+04_paddock_valley: 78.6 fps average, worst frame 25 ms, scene MainWorld
+05_substation: 79.6 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 117.6 fps average, worst frame 17 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 18:48:33 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 115.4 fps average, worst frame 25 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 71.0 fps average, worst frame 34 ms, scene MainWorld
+02_records_blackout: 94.9 fps average, worst frame 25 ms, scene MainWorld
+03_dock: 58.6 fps average, worst frame 138 ms, scene MainWorld
+04_paddock_valley: 111.4 fps average, worst frame 17 ms, scene MainWorld
+05_substation: 111.8 fps average, worst frame 17 ms, scene MainWorld
+06_yard: 113.1 fps average, worst frame 17 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 18:49:43 done
+
+# Rebuild after the Feed Prep fix, 19:59, commit 65114cf
+status: completed
+result: Succeeded
+totalSizeBytes: 2621450528
+buildTimeMs: 67311
+totalWarnings: 0
+totalErrors: 0
+== 20:01:48 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 65.7 fps average, worst frame 33 ms, scene MainMenu
+MainWorld up after 2.8 s
+01_night_office: 46.3 fps average, worst frame 54 ms, scene MainWorld
+02_records_blackout: 66.6 fps average, worst frame 26 ms, scene MainWorld
+03_dock: 66.5 fps average, worst frame 47 ms, scene MainWorld
+04_paddock_valley: 71.3 fps average, worst frame 25 ms, scene MainWorld
+05_substation: 64.2 fps average, worst frame 25 ms, scene MainWorld
+06_yard: 44.5 fps average, worst frame 165 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 20:03:00 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 74.8 fps average, worst frame 33 ms, scene MainMenu
+MainWorld up after 2.5 s
+01_night_office: 36.7 fps average, worst frame 183 ms, scene MainWorld
+02_records_blackout: 57.1 fps average, worst frame 117 ms, scene MainWorld
+03_dock: 61.3 fps average, worst frame 31 ms, scene MainWorld
+04_paddock_valley: 76.2 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 75.4 fps average, worst frame 25 ms, scene MainWorld
+06_yard: 72.4 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 20:04:10 done
+
+# Rebuild after the Feed Prep fix, 20:18, commit 966773a
+status: completed
+result: Unknown
+totalSizeBytes: 0
+buildTimeMs: 0
+totalWarnings: 0
+totalErrors: 0
+== 20:21:42 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 115.0 fps average, worst frame 16 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 74.0 fps average, worst frame 24 ms, scene MainWorld
+02_records_blackout: 78.3 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 78.3 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 88.1 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 88.3 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 97.2 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 20:22:53 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 115.7 fps average, worst frame 14 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 78.1 fps average, worst frame 33 ms, scene MainWorld
+02_records_blackout: 76.6 fps average, worst frame 25 ms, scene MainWorld
+03_dock: 84.9 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 104.7 fps average, worst frame 21 ms, scene MainWorld
+05_substation: 102.9 fps average, worst frame 21 ms, scene MainWorld
+06_yard: 101.4 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 20:24:03 done
+
+# Rebuild with the T. rex turn fix, 20:25, commit 966773a: Succeeded, 2,621,450,528 bytes, 56.0 s, 0 warnings, 0 errors
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 118.0 fps average, worst frame 15 ms, scene MainMenu
+MainWorld up after 2.3 s
+01_night_office: 63.7 fps average, worst frame 34 ms, scene MainWorld
+02_records_blackout: 90.3 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 75.9 fps average, worst frame 30 ms, scene MainWorld
+04_paddock_valley: 79.0 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 80.1 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 83.9 fps average, worst frame 24 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+
+# Rebuild after the sea fix (blue-teal day sea), 21:03, commit e883cab
+status: completed
+result: Succeeded
+totalSizeBytes: 2621451040
+buildTimeMs: 54098
+totalWarnings: 0
+totalErrors: 0
+== 21:05:00 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.0 fps average, worst frame 14 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 64.6 fps average, worst frame 64 ms, scene MainWorld
+02_records_blackout: 60.8 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 85.0 fps average, worst frame 17 ms, scene MainWorld
+04_paddock_valley: 102.3 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 105.8 fps average, worst frame 17 ms, scene MainWorld
+06_yard: 102.9 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:06:10 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.5 fps average, worst frame 14 ms, scene MainMenu
+MainWorld up after 2.5 s
+01_night_office: 72.0 fps average, worst frame 33 ms, scene MainWorld
+02_records_blackout: 89.3 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 81.6 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 90.2 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 92.5 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 97.0 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:07:21 done
+
+# Rebuild after the CCTV and records beacon fixes, 21:22, commit 6c7b2ac
+status: completed
+result: Succeeded
+totalSizeBytes: 2621451040
+buildTimeMs: 51554
+totalWarnings: 0
+totalErrors: 0
+== 21:24:19 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 120.0 fps average, worst frame 9 ms, scene MainMenu
+MainWorld up after 2.3 s
+01_night_office: 72.8 fps average, worst frame 26 ms, scene MainWorld
+02_records_blackout: 105.4 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 77.1 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 83.4 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 86.6 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 94.0 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:25:30 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 120.0 fps average, worst frame 9 ms, scene MainMenu
+MainWorld up after 2.3 s
+01_night_office: 79.0 fps average, worst frame 33 ms, scene MainWorld
+02_records_blackout: 80.0 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 94.4 fps average, worst frame 17 ms, scene MainWorld
+04_paddock_valley: 106.9 fps average, worst frame 17 ms, scene MainWorld
+05_substation: 106.0 fps average, worst frame 17 ms, scene MainWorld
+06_yard: 64.1 fps average, worst frame 25 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:26:40 done
+
+# Rebuild after the storm-moon glint fix, 21:43, commit 8714fa5
+status: completed
+result: Succeeded
+totalSizeBytes: 2621451040
+buildTimeMs: 55563
+totalWarnings: 0
+totalErrors: 0
+== 21:44:56 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.8 fps average, worst frame 15 ms, scene MainMenu
+MainWorld up after 2.3 s
+01_night_office: 72.7 fps average, worst frame 33 ms, scene MainWorld
+02_records_blackout: 110.7 fps average, worst frame 84 ms, scene MainWorld
+03_dock: 76.2 fps average, worst frame 26 ms, scene MainWorld
+04_paddock_valley: 80.3 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 79.4 fps average, worst frame 26 ms, scene MainWorld
+06_yard: 80.4 fps average, worst frame 25 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:46:07 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 120.0 fps average, worst frame 9 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 71.6 fps average, worst frame 26 ms, scene MainWorld
+02_records_blackout: 71.2 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 97.2 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 112.0 fps average, worst frame 17 ms, scene MainWorld
+05_substation: 116.2 fps average, worst frame 17 ms, scene MainWorld
+06_yard: 117.3 fps average, worst frame 17 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 21:47:17 done
+
+# Rebuild after the document-review fix, 19:51, commit 537ed6e
+status: completed
+result: Succeeded
+totalSizeBytes: 2621451552
+buildTimeMs: 54485
+totalWarnings: 0
+totalErrors: 0
+== 19:53:08 self-test run 1
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 119.8 fps average, worst frame 13 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 71.3 fps average, worst frame 33 ms, scene MainWorld
+02_records_blackout: 89.0 fps average, worst frame 18 ms, scene MainWorld
+03_dock: 108.7 fps average, worst frame 18 ms, scene MainWorld
+04_paddock_valley: 114.2 fps average, worst frame 17 ms, scene MainWorld
+05_substation: 110.2 fps average, worst frame 17 ms, scene MainWorld
+06_yard: 116.0 fps average, worst frame 17 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 19:54:18 self-test run 2
+Cretacea smoke test, 0.1.0, Apple M5 Max, 1920x1080
+00_menu: 118.9 fps average, worst frame 17 ms, scene MainMenu
+MainWorld up after 2.4 s
+01_night_office: 73.2 fps average, worst frame 25 ms, scene MainWorld
+02_records_blackout: 119.3 fps average, worst frame 17 ms, scene MainWorld
+03_dock: 79.2 fps average, worst frame 33 ms, scene MainWorld
+04_paddock_valley: 84.7 fps average, worst frame 18 ms, scene MainWorld
+05_substation: 87.7 fps average, worst frame 18 ms, scene MainWorld
+06_yard: 90.2 fps average, worst frame 18 ms, scene MainWorld
+errors logged: 0
+RESULT: PASS
+== 19:55:29 done

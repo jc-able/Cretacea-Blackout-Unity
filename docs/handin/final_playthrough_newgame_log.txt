@@ -1,0 +1,37 @@
+[    0.0s] [Intro] BOT: start (fromMenu=True, passiveDinos=False)
+[    2.0s] [Intro] MENU: clicked NEW GAME
+[    2.3s] [Intro] MENU: gameplay started from the main menu
+[    2.3s] [Intro] NAV: scene MainWorld: rebuilding the player NavMesh from it
+[    2.3s] [Intro] NAV: player NavMesh built in 0.4 s from 2511 sources (0 triggers dropped)
+[   54.3s] [Night] CHAPTER: checkpoint Night (previous Intro took 61 s)
+[   54.3s] [Night] PROBLEM NO_OBJECTIVE: no objective on screen for 30 s outside a cutscene
+[   57.0s] [Night] OBJECTIVE: Take your tactical flashlight from the security desk.
+[   57.0s] [Night] NAV: partial NavMesh path to pickup_flashlight (ends 0.8 m short): walking the rest straight
+[   57.8s] [Night] USE: pressed Interact on pickup_flashlight (prompt 'Pick up Tactical Flashlight {interact}')
+[   58.1s] [Night] OBJECTIVE: Clock in at the security terminal.
+[   58.1s] [Night] NAV: partial NavMesh path to terminal (ends 0.8 m short): walking the rest straight
+[   60.3s] [Night] USE: pressed Interact on terminal (prompt 'Clock in at security terminal {interact}')
+[   61.6s] [Night] OBJECTIVE: Walk east to the Control Room and log the paddock feeds.
+[   72.2s] [Night] UNSTICK: trying crouched
+[   91.9s] [Night] UNSTICK: trying crouched
+[  124.8s] [Night] OBJECTIVE: Get to the main entrance in the Lobby Atrium.
+[  124.8s] [Night] NAV: partial NavMesh path to lobby_beat (ends 2.8 m short): walking the rest straight
+[  142.3s] [Night] OBJECTIVE: Try the Staff Exit at the west end of the Lobby.
+[  165.2s] [Night] OBJECTIVE: Search the Records Annex (east end of Staff Corridor) for the 1996 evacuation binder.
+[  165.2s] [Night] NAV: partial NavMesh path to doc_manual (ends 0.8 m short): walking the rest straight
+[  190.8s] [Night] DOOR: opening door_records
+[  196.2s] [Night] USE: pressed Interact on doc_manual (prompt 'Read 1996 Evacuation Manual {interact}')
+[  196.3s] [Night] DOC: document open: reading
+[  200.3s] [Records] OBJECTIVE: Restore auxiliary power at Substation 3 (Paddock 4), then reach Exit E-0. Route: Feed Prep -> Loading Dock -> Service Path.
+[  200.3s] [Records] CHAPTER: checkpoint Records (previous Night took 146 s)
+[  200.3s] [Records] NAV: partial NavMesh path to reach_dock (ends 22.8 m short): walking the rest straight
+[  207.8s] [Records] DOOR: opening door_wing
+[  212.0s] [Records] STEALTH: raptor within 16 m: crouched, light off (Records)
+[  224.4s] [Records] DOOR: opening door_vet
+[  235.0s] [Records] DOOR: blocked by locked door dock_roller: 'Locked.'
+[  236.5s] [Records] UNSTICK: trying crouched
+[  242.6s] [Records] UNSTICK: trying crouched
+[  245.0s] [Records] PROBLEM DEATH: died at (8.2, 0.0, -12.0), objective 'Restore auxiliary power at Substation 3 (Paddock 4), then reach Exit E-0. Route: Feed Prep -> Loading Dock -> Service Path.', goal reach_dock
+[  249.0s] [Records] RETRY: pressed RETRY CHECKPOINT (checkpoint Records)
+[  252.3s] [Records] PROBLEM STUCK: no progress toward reach_dock for 20 s at (-8.5, 0.0, 23.1) (45.7 m left)
+[  865.9s] [Records] END: stopped from shell after 866 s, deaths 1
