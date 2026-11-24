@@ -191,8 +191,8 @@
     }
   },
   "contact_sheets": [
-    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
-    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
-    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
+    "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
+    "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
+    "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
   ]
 }

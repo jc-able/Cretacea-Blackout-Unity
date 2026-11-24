@@ -2,7 +2,7 @@
 
 - **Project Audited:** `~/CretaceaBlackoutUnity` (`Unity 6000.6.9f1`, HDRP `17.6.0`, Apple M5 Max / Metal 4)
 - **Scenes Tested:** `Assets/Scenes/MainMenu.unity` & `Assets/Scenes/MainWorld.unity` (strictly read-only inspection + live Play Mode via `unity command`)
-- **Evidence Captured & Directly Inspected:** **85 / 85 PNG screenshots (100% directly viewed via `read_file`)** inside `~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/unity_visual_qa/`
+- **Evidence Captured & Directly Inspected:** **85 / 85 PNG screenshots (100% directly viewed via `read_file`)** inside `antigravity_scratch/unity_visual_qa/`
 - **Editor State Preserved:** `MainWorld.unity` clean (`dirty=False`), zero project files modified, **VARCO Sound (`AIGenerativeSoundWindow`) remained visibly docked** throughout (`docked=True`).
 
 ---
@@ -205,7 +205,7 @@
 ---
 
 ## Complete Inspected Screenshot Inventory (85 PNGs)
-All located in `~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/unity_visual_qa/`:
+All located in `antigravity_scratch/unity_visual_qa/`:
 - **Main Menu & Modals (3):** `01_mainmenu_home.png`, `02_mainmenu_settings.png`, `03_mainmenu_chapters.png`
 - **Ch. 1 Spawn, Flashlight, Viewmodel Diagnostics, HUD, Journal, Pause, Docs (21):** `04_ch1_spawn_frame1.png`, `04b_ch1_spawn_screen.png`, `05_ch1_desk_flashlight_pickup.png`, `06_ch1_flashlight_equipped_pov.png`, `06b_ch1_flashlight_equipped_screen.png`, `06c_viewmodel_diag_layer12_on_maincam.png`, `06d_viewmodel_closeup_layer12_temp.png`, `06e_viewmodel_clean_layer12.png`, `07_flashlight_corridor_crouched.png`, `07_flashlight_corridor_volumetric_stealth.png`, `07b_flashlight_corridor_screen.png`, `08_flashlight_wall_anticlip.png`, `08_flashlight_wall_anticlip_screen.png`, `08b_flashlight_wall_anticlip_cam.png`, `08c_viewmodel_wall_anticlip_layer12.png`, `09_journal_tab0_map.png`, `10_journal_tab1_systems.png`, `11_journal_tab2_docs.png`, `12_pause_menu_no_overlap.png`, `13_document_modal.png`, `13b_document_modal_real_manual.png`
 - **Doors & Windows (25):** `14_door_wing_closed.png`, `15_door_wing_open.png`, `16_door_wing_from_feedprep.png`, `17_dock_roller_from_feedprep.png`, `18_dock_roller_from_outside.png`, `19_door_storage_open.png`, `20_corridor_lobby_archway.png`, `21_staff_exit_door.png`, `22_staff_exit_collapse_ceiling.png`, `23_control_room_north_window.png`, `24_security_office_west_window.png`, `24b_security_office_west_window_day.png`, `25_workshop_north_windows.png`, `25b_workshop_north_windows_foreman.png`, `25c_workshop_north_windows_outside.png`, `26_workshop_door_e_closed.png`, `26b_workshop_door_e_closed.png`, `27_workshop_door_e_open.png`, `27b_workshop_door_e_open.png`, `28_oldyard_squeeze_gap.png`, `28b_oldyard_squeeze_gap.png`, `29_e0_gate_closed.png`, `29b_e0_gate_closed.png`, `30_e0_gate_open.png`, `30b_e0_gate_open.png`
@@ -217,7 +217,7 @@ All located in `~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f
 
 ## Wave 5 Final Targeted Visual & Play-Mode Re-Verification Addendum — **FINAL VERDICT: PASS (AAA SHIP-READY)**
 
-- **Re-Verification Evidence:** **29 / 29 fresh targeted PNG screenshots (100% directly inspected via `read_file`)** saved in `~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/unity_visual_qa/reverify/` (`r01`..`r24`).
+- **Re-Verification Evidence:** **29 / 29 fresh targeted PNG screenshots (100% directly inspected via `read_file`)** saved in `antigravity_scratch/unity_visual_qa/reverify/` (`r01`..`r24`).
 - **Console Errors Across Full `MainMenu` + `MainWorld` Chapter Sweep (`cursor 2320 → 2322`):** **`0` errors** (`entries: []`, `consoleErrors: 0`).
 - **Editor State Verified:** `MainWorld.unity` clean (`dirty=False`), zero project files modified, **VARCO Sound (`AIGenerativeSoundWindow`) remained visibly docked** (`docked=True`).
 

@@ -82,6 +82,7 @@ namespace Cretacea.Audio
     [CreateAssetMenu(fileName = "SoundBank", menuName = "Cretacea/Audio/Sound Bank")]
     public sealed class SoundBank : ScriptableObject
     {
+        // Optional drop-in folder: exists only if you install the VARCO Sound plugin; the game runs without it.
         public const string VarcoGeneratedFolder = "Assets/VARCOSound/Generated";
         public const string DefaultAudioFolder = "Assets/Audio";
 

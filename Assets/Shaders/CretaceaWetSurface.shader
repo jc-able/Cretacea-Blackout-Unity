@@ -79,6 +79,7 @@ Shader "Cretacea/HDRP/WetPuddleOverlay"
                 float3 normalWS   : TEXCOORD1;
             };
 
+            // Hash22 from "Hash without Sine", Copyright (c) 2014 David Hoskins, MIT License, https://www.shadertoy.com/view/4djSRW
             float2 Hash22(float2 p)
             {
                 float3 p3 = frac(float3(p.xyx) * float3(0.1031, 0.1030, 0.0973));

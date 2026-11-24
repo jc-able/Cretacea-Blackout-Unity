@@ -35,7 +35,7 @@ namespace Cretacea.Core
         public float musicVolume = 0.8f;
         public float sfxVolume = 0.95f;
         public float voVolume = 1.0f;
-        public int qualityTier = 2;      // 0 = Performance, 1 = Balanced, 2 = High (M5 Max default)
+        public int qualityTier = 2;      // Not read anywhere yet (Settings has no quality row). QualitySettings order: 0 = High Fidelity, 1 = Balanced, 2 = Performant
         public float stpRenderScale = 0.85f;
         /// <summary>Player brightness in EV stops (-1.5..+1.5), applied as AtmosphereController.UserBrightnessEV.</summary>
         public float brightnessEV = 0f;

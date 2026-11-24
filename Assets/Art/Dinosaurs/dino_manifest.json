@@ -19,7 +19,7 @@
       "ao": "4096x4096 Linear Grayscale PNG",
       "hdrp_mask_map": "4096x4096 Linear RGBA PNG (R=Metallic, G=AO, B=0, A=1-Roughness Smoothness)"
     },
-    "ready_root": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity"
+    "ready_root": "antigravity_scratch/dino_pipeline/ready_for_unity"
   },
   "assets": {
     "raptor": {
@@ -215,12 +215,12 @@
         }
       },
       "contact_sheets": [
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
+        "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
+        "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
+        "antigravity_scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
       ],
-      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/raptor/Velociraptor.fbx",
-      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/raptor/Textures",
+      "fbx_path": "antigravity_scratch/dino_pipeline/ready_for_unity/raptor/Velociraptor.fbx",
+      "textures_path": "antigravity_scratch/dino_pipeline/ready_for_unity/raptor/Textures",
       "verification": {
         "fbx_exists": true,
         "fbx_size_mb": 4.51,
@@ -469,11 +469,11 @@
         }
       },
       "contact_sheets": [
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_1_anatomy_closeups.png",
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_2_animations.png"
+        "antigravity_scratch/dino_pipeline/renders/trex/trex_sheet_1_anatomy_closeups.png",
+        "antigravity_scratch/dino_pipeline/renders/trex/trex_sheet_2_animations.png"
       ],
-      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex/Tyrannosaurus.fbx",
-      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex/Textures",
+      "fbx_path": "antigravity_scratch/dino_pipeline/ready_for_unity/trex/Tyrannosaurus.fbx",
+      "textures_path": "antigravity_scratch/dino_pipeline/ready_for_unity/trex/Textures",
       "verification": {
         "fbx_exists": true,
         "fbx_size_mb": 6.07,
@@ -644,11 +644,11 @@
         }
       },
       "contact_sheets": [
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_1_anatomy_closeups.png",
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_2_walk_cycle.png"
+        "antigravity_scratch/dino_pipeline/renders/sauropod/sauropod_sheet_1_anatomy_closeups.png",
+        "antigravity_scratch/dino_pipeline/renders/sauropod/sauropod_sheet_2_walk_cycle.png"
       ],
-      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/sauropod/Brachiosaurus.fbx",
-      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/sauropod/Textures",
+      "fbx_path": "antigravity_scratch/dino_pipeline/ready_for_unity/sauropod/Brachiosaurus.fbx",
+      "textures_path": "antigravity_scratch/dino_pipeline/ready_for_unity/sauropod/Textures",
       "verification": {
         "fbx_exists": true,
         "fbx_size_mb": 3.54,
@@ -812,11 +812,11 @@
         }
       },
       "contact_sheets": [
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_1_anatomy_closeups.png",
-        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_2_walk_cycle.png"
+        "antigravity_scratch/dino_pipeline/renders/triceratops/triceratops_sheet_1_anatomy_closeups.png",
+        "antigravity_scratch/dino_pipeline/renders/triceratops/triceratops_sheet_2_walk_cycle.png"
       ],
-      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/triceratops/Triceratops.fbx",
-      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/triceratops/Textures",
+      "fbx_path": "antigravity_scratch/dino_pipeline/ready_for_unity/triceratops/Triceratops.fbx",
+      "textures_path": "antigravity_scratch/dino_pipeline/ready_for_unity/triceratops/Textures",
       "verification": {
         "fbx_exists": true,
         "fbx_size_mb": 2.59,
@@ -921,9 +921,9 @@
       "pivot": "base_center_Y0",
       "forward_axis_unity": "+Z",
       "up_axis_unity": "+Y",
-      "contact_sheet": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex_skeleton/trex_skeleton_contact_sheet.png",
-      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex_skeleton/TrexSkeleton.fbx",
-      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex_skeleton/Textures",
+      "contact_sheet": "antigravity_scratch/dino_pipeline/renders/trex_skeleton/trex_skeleton_contact_sheet.png",
+      "fbx_path": "antigravity_scratch/dino_pipeline/ready_for_unity/trex_skeleton/TrexSkeleton.fbx",
+      "textures_path": "antigravity_scratch/dino_pipeline/ready_for_unity/trex_skeleton/Textures",
       "verification": {
         "fbx_exists": true,
         "fbx_size_mb": 2.72,

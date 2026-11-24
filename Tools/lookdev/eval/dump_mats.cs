@@ -26,5 +26,7 @@ foreach (var kv in use.OrderByDescending(k => k.Value))
     if (m.HasProperty("_UVBase")) line.Append("|uv=" + m.GetFloat("_UVBase"));
     sb.AppendLine(line.ToString());
 }
-System.IO.File.WriteAllText("/private/tmp/claude-501/-Users-jc-able--claude-spares-spare-jxQboM/9d5b6ec1-be2e-4d6b-8f6a-8a96d2ed0c5e/scratchpad/unity/dump/materials.txt", sb.ToString());
+var dumpDir = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(UnityEngine.Application.dataPath), "Logs", "dump");
+System.IO.Directory.CreateDirectory(dumpDir);
+System.IO.File.WriteAllText(System.IO.Path.Combine(dumpDir, "materials.txt"), sb.ToString());
 return "mats=" + use.Count;

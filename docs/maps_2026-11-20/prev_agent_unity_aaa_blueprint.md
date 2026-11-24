@@ -3,7 +3,7 @@
 **Target Project:** `~/CretaceaBlackoutUnity`  
 **Engine & Pipeline:** Unity `6000.6.9f1` (`arm64` Apple Silicon) · **HDRP 17.6.0** (`com.unity.template.hdrp-blank`)  
 **Target Hardware:** Apple M5 Max (18-core CPU, 40-core GPU, 128 GB Unified Memory, Metal 4)  
-**Source References:** [godot_audit.md](file://~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/godot_audit.md) · [visual_report.md](file://~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/godot_visual_audit/visual_report.md) · [toolchain_guide.md](file://~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/toolchain_guide.md)  
+**Source References:** `antigravity_scratch/godot_audit.md` · `antigravity_scratch/godot_visual_audit/visual_report.md` · `antigravity_scratch/toolchain_guide.md` (on the original machine, not included)  
 **Scope Rule:** `~/CretaceaBlackout` is **strictly read-only**. All build work happens inside `~/CretaceaBlackoutUnity`.
 
 ---

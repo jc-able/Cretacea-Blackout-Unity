@@ -216,7 +216,7 @@ namespace Cretacea.Core
             FlashlightAction.AddBinding("<Keyboard>/f");
             FlashlightAction.AddBinding("<Gamepad>/buttonNorth");
 
-            // Interact (E / Left Mouse optional / Gamepad West X)
+            // Interact (E / Gamepad West X)
             InteractAction = GameplayMap.AddAction("Interact", InputActionType.Button);
             InteractAction.AddBinding("<Keyboard>/e");
             InteractAction.AddBinding("<Gamepad>/buttonWest");
@@ -236,7 +236,7 @@ namespace Cretacea.Core
             SkipCutsceneAction.AddBinding("<Keyboard>/space");
             SkipCutsceneAction.AddBinding("<Gamepad>/buttonWest");
 
-            // Cancel / Close Document (Escape / E / Right Mouse / Gamepad East B)
+            // Cancel / back (Escape / Gamepad East B); documents also close on Interact (MenuController)
             CancelAction = GameplayMap.AddAction("Cancel", InputActionType.Button);
             CancelAction.AddBinding("<Keyboard>/escape");
             CancelAction.AddBinding("<Gamepad>/buttonEast");

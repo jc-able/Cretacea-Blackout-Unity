@@ -31,3 +31,10 @@ sysinfo.txt
 crashlytics-build.properties
 /SaveSandbox/
 /Builds/
+
+# Editor and build leftovers, and the PID files Tools/lookdev/clone_editor.sh writes
+.vs/
+/*.app/
+mono_crash.*
+*.pid
+*.pid.last

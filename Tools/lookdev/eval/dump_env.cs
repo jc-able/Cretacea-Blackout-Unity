@@ -64,5 +64,7 @@ foreach (var root in UnityEngine.SceneManagement.SceneManager.GetActiveScene().G
 }
 sb.AppendLine("reflectionProbes=" + UnityEngine.Object.FindObjectsByType<ReflectionProbe>(FindObjectsInactive.Include).Length + " planarProbes=" + UnityEngine.Object.FindObjectsByType<PlanarReflectionProbe>(FindObjectsInactive.Include).Length + " decalProjectors=" + UnityEngine.Object.FindObjectsByType<DecalProjector>(FindObjectsInactive.Include).Length + " particleSystems=" + UnityEngine.Object.FindObjectsByType<ParticleSystem>(FindObjectsInactive.Include).Length + " lodGroups=" + UnityEngine.Object.FindObjectsByType<LODGroup>(FindObjectsInactive.Include).Length + " cameras=" + UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include).Length);
 sb.AppendLine("ambientMode=" + RenderSettings.ambientMode + " lightmapCount=" + LightmapSettings.lightmaps.Length);
-System.IO.File.WriteAllText("/private/tmp/claude-501/-Users-jc-able--claude-spares-spare-jxQboM/9d5b6ec1-be2e-4d6b-8f6a-8a96d2ed0c5e/scratchpad/unity/dump/env.txt", sb.ToString());
+var dumpDir = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(UnityEngine.Application.dataPath), "Logs", "dump");
+System.IO.Directory.CreateDirectory(dumpDir);
+System.IO.File.WriteAllText(System.IO.Path.Combine(dumpDir, "env.txt"), sb.ToString());
 return "ok";

@@ -2,7 +2,7 @@
 # Final player build on the verification clone + two self-test runs (saves sandboxed).
 export UNITY_PROJECT_PATH=$HOME/CretaceaUnityClones/vfx
 cd $UNITY_PROJECT_PATH && source Tools/lookdev/ucli.sh
-S=/private/tmp/claude-501/-Users-jc-able--claude-spares-spare-jxQboM/9d5b6ec1-be2e-4d6b-8f6a-8a96d2ed0c5e/scratchpad/unity/buildtest_final
+S="${TMPDIR:-/tmp}/cretacea_buildtest_final"
 echo "== $(date +%T) rebuild scenes"; unity command cretacea build_all_scenes --timeout 2400 2>&1 | grep -v hint | tail -1
 OLD=$(unity command build status 2>/dev/null | grep -E '^buildId' | head -1)
 echo "== $(date +%T) player build (previous: $OLD)"

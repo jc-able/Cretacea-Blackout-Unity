@@ -10,7 +10,7 @@ spot() { # name checkpoint x y z yaw pitch flash
   /bin/sleep 2
   : > /tmp/_perf_$$.txt
   for i in $(seq 1 $N); do unity command diagnostics get_performance 2>/dev/null | grep -E "^render|^frameTiming" | tr '\n' ' ' >> /tmp/_perf_$$.txt; echo >> /tmp/_perf_$$.txt; /bin/sleep 0.7; done
-  /opt/homebrew/bin/python3 - "$1" /tmp/_perf_$$.txt <<'PY'
+  "${PYTHON:-python3}" - "$1" /tmp/_perf_$$.txt <<'PY'
 import sys,re,statistics
 name,p=sys.argv[1],sys.argv[2]
 g=[];c=[];m=[];t=[];d=[]

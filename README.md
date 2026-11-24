@@ -18,7 +18,8 @@ Nov 20 2026. The game was improved further after this sheet was made.*
 
 ![The in-game park map](Assets/Art/UI/Maps/map_park_modern.png)
 
-*The park map you carry on your tablet.*
+*The visitor park map seen on posters, signs and the Control Room screen in the game (the tablet draws its own map
+from the island terrain).*
 
 ## How this was made
 
@@ -38,15 +39,19 @@ Every prompt, decision, number and before/after picture is in the devlog, in the
 
 - **Unity 6000.6.9f1 exactly.** Install it through Unity Hub (Installs > Install Editor; older versions are under the
   Archive tab). The project uses HDRP 17.6, which belongs to this Unity release. Opening it in another version makes
-  Unity upgrade or downgrade the project, and HDRP settings and the large binary scene files may not survive that.
-  Nobody has tested another version.
+  Unity upgrade or downgrade the project, and HDRP settings and the large binary world scene and terrain files may not
+  survive that. Nobody has tested another version.
 - **Operating system:** it was built and tested only on macOS with Apple Silicon (Metal). Windows (DirectX 12) and
   Linux (Vulkan) are supported by HDRP and should work, but nobody has tried them yet. Add the Build Support module
   for each platform you want to build for.
-- **Disk space:** the project is about 3.7 GB. Unity's first import creates a large `Library` folder, and a macOS build
-  is about 2.6 GB, so keep roughly 20 GB free.
+- **Disk space:** a git clone takes about 7.7 GB (3.6 GB of that is Git's own compressed copy). After the first import
+  and one macOS build, Unity's `Library` folder was about 9.4 GB and the build about 2.6 GB: about 20 GB in all, so keep
+  about 25 GB free.
 - **A decent GPU:** HDRP is demanding (volumetric fog, rain, many lights). It was measured on an Apple M5 Max at
-  64-120 fps at 1920x1080. On a weaker machine, lower the quality setting in the game's Settings.
+  64-120 fps at 1920x1080. The game has no quality option in its own Settings yet. On a weaker machine, choose the
+  lighter Balanced or Performant level in **Edit > Project Settings > Quality** before you press Play, and make it the
+  default for your platform in the same window before you build (the editor and desktop builds use High Fidelity as
+  shipped).
 
 ## Get the code
 
@@ -54,14 +59,15 @@ Every prompt, decision, number and before/after picture is in the devlog, in the
 git clone https://github.com/jc-able/Cretacea-Blackout-Unity.git
 ```
 
-Or press **Code > Download ZIP** on GitHub and unzip it. The repository is large (about 3.7 GB; the world scene alone
-is 78 MB), so either way takes a while. Everything the game needs is in the repository: no Git LFS, no extra downloads.
+Or press **Code > Download ZIP** on GitHub and unzip it. The repository is large (the files are about 4.1 GB, and a
+git clone with its history about 7.7 GB; the world scene alone is 78 MB), so either way takes a while. Everything the
+game needs is in the repository: no Git LFS, no extra downloads.
 
 ## Open and play
 
 1. In Unity Hub, choose **Add > Add project from disk** and pick the folder you cloned or unzipped.
-2. Open it with Unity 6000.6.9f1. The first import takes a long time (anything from several minutes to an hour,
-   depending on your machine) while Unity imports the art and compiles HDRP shaders. Let it finish.
+2. Open it with Unity 6000.6.9f1. The first import takes a while (about 4 minutes on an Apple M5 Max, longer on slower
+   machines) while Unity imports the art and compiles HDRP shaders. Let it finish.
 3. Open `Assets/Scenes/MainMenu.unity` and press **Play**. Choose **NEW GAME** (the opening cinematic plays first) or
    **CHAPTER SELECT** to start at any chapter. The scenes and every generated helper file (terrain tiles, tree LODs and
    impostors, the hill jungle, the grass textures) are already in the repository, so there is nothing to rebuild first.
@@ -88,11 +94,12 @@ buttons in the same places.
 | Tablet: objective and map | Tab | View |
 | Pause | Esc | Menu |
 | Skip a cutscene | Space (hold) | X (hold) |
-| Close a document / back | Esc | B |
-| Menus | Mouse, or arrows + Enter, Esc to go back | D-pad or left stick, A to select, B to go back |
+| Close a document | E or Esc | X or B |
+| Close the tablet | Tab or Esc | View or B |
+| Menus | Mouse, or arrows + Enter, Esc to go back | D-pad or left stick, A to select, B to go back (in the in-game pause menu and its pages, use Menu) |
 
-Settings has mouse and gamepad sensitivity, invert Y, field of view, brightness, subtitles and sound captions, volumes,
-vibration and a quality level. The pause menu also has a CONTROLS page.
+Settings has mouse and gamepad sensitivity, invert Y, field of view, brightness, fullscreen, subtitles and sound
+captions, volumes and vibration. The pause menu also has a CONTROLS page.
 
 ## The story and how to finish
 
@@ -132,8 +139,15 @@ Assets/
 Packages/         the Unity package list
 ProjectSettings/  Unity project settings (the build scene list is in EditorBuildSettings.asset)
 Tools/lookdev/    test and capture scripts the agents used (Python 3 and shell)
+Tools/agent/      three one-off agent scripts that code comments point to (visitor clothes colours, E-0 sign, crowd lanes)
 docs/             the look bible, the hand-off notes, agent briefs and hand-ins, and four AI review rounds
+CLAUDE.md         notes for AI coding agents (such as Claude Code) that work in this project
 ```
+
+Two folders are hidden from Unity's Project window because their names end in `~`:
+`Assets/Art/Materials/Dinosaurs/Tools~` has the Python scripts that made the dinosaur hide maps and the visitors' look
+masks, and `Assets/Art/Terrain/Source~` has the scripts that made the terrain textures and the green leaf atlases. The
+script for the key-prompt atlas is in `docs/handin/ui_tools`.
 
 ## Keep building it
 
@@ -158,12 +172,14 @@ docs/             the look bible, the hand-off notes, agent briefs and hand-ins,
 
 **The scenes are generated by code.** `Assets/Editor/WorldBuilder` holds one builder per zone (visitor center, service
 paths, substation and yard, terrain, jungle and coast) plus `CretaceaWorldAssembler.cs`, which puts both scenes
-together, bakes the dinosaur navigation meshes and registers the scenes for builds. `Assets/Editor/LookPass` then sets
-render settings, atmosphere profiles, materials, lights and weather. The committed scenes are the output of these
+together, bakes the dinosaur navigation meshes and registers the scenes for builds. `Assets/Editor/LookPass` then
+re-applies materials, lights, fixtures, weather and the albedo map. The committed scenes are the output of these
 builders. To change the level, change a builder and run Build All Scenes again: anything you edit by hand in
 `MainWorld.unity` or `MainMenu.unity` is lost the next time the scenes are rebuilt. Stop Play mode first. A rebuild
 takes a few minutes, rewrites the generated helper files (terrain tiles, foliage LODs and impostors, grass atlases) and
-ends with a report in the Console.
+ends with a report in the Console. A rebuild does not re-apply the render settings or the atmosphere profiles: after
+changing `LookRenderSettings.cs` or `LookAtmosphereProfiles.cs`, also run **Cretacea > Look > Run Look Pass On Open
+Scene** or **Cretacea > Look > Regenerate Atmosphere Profiles**.
 
 Useful menu items (all under **Cretacea** in the editor's menu bar):
 - **World > Build All Scenes (MainWorld + MainMenu):** rebuild both scenes from the builders.
@@ -181,8 +197,13 @@ its attributes, so leave the package installed (Unity downloads it for you). You
 open, play, change or build the game, and players of a built game never need any of it.
 
 **Test tools.** `Tools/lookdev` needs Python 3 (with Pillow and numpy for the image tools), the `unity` command-line
-tool on your PATH and an open editor. Set `UNITY_PROJECT_PATH` to your project folder first: the scripts otherwise fall
-back to a folder name from the original machine.
+tool on your PATH and an open editor; `motion_set.sh` also needs ffmpeg. The image tools (`frame_stats.py`, `sheet.py`,
+`region_stats.py`) only need Pillow and numpy. The shell scripts are written for bash on macOS. The `unity` tool's
+install steps are in the "Install the Unity CLI" section of `Library/PackageCache/com.unity.pipeline@*/README.md`,
+which appears after the first import. Set `UNITY_PROJECT_PATH` to your project folder first: most scripts otherwise
+fall back to a folder name from the original machine. `playthrough.py` will not start without it (or `--project`), and
+it refuses any path containing `CretaceaBlackoutUnity`, the original folder name. `clone_editor.sh` only starts
+editors for project copies under `~/CretaceaUnityClones`.
 - `route_test.py` plays every story beat in Play mode through the game's own triggers, checks the game state after
   each one (45 checks) and saves a screenshot per beat.
 - `playthrough.py` starts the playthrough bot (`Assets/Scripts/Dev/PlaythroughBot.cs`), which plays the whole game with
@@ -194,13 +215,14 @@ back to a folder name from the original machine.
 built. `docs/HANDOFF.md` is the agents' running log, with every fix, measurement and trap they hit. `docs/review1`
 to `docs/review4` are the critics' reports, `docs/briefs` the instructions each agent got and `docs/handin` what each one
 delivered. Some of these notes mention folders on the original machine (agent clones, scratch folders); those do not
-exist for you.
+exist for you. Commit hashes and branch names in the notes refer to the private development history; this repository
+starts from a snapshot of it.
 
-**Making a build.** Open **File > Build Profiles**, pick your platform and press **Build**.
-MainMenu and MainWorld are already in the scene list. To check a build without playing it, start it with
-`-cretaceaSmoke <folder>`: it opens the menu, visits every chapter start, writes a screenshot per stop and a
-`report.txt` with frame rates and errors into that folder, then quits (`Assets/Scripts/Dev/SmokeTestRunner.cs`). On
-macOS:
+**Making a build.** Open **File > Build Profiles**, pick your platform and press **Build**. Save the build into the
+`Builds` folder, which Git ignores. MainMenu and MainWorld are already in the scene list. A macOS build took about
+15 minutes on an Apple M5 Max. To check a build without playing it, start it with `-cretaceaSmoke <folder>`: it opens
+the menu, visits every chapter start, writes a screenshot per stop and a `report.txt` with frame rates and errors into
+that folder, then quits (`Assets/Scripts/Dev/SmokeTestRunner.cs`). On macOS:
 
 ```bash
 CRETACEA_SAVE_DIR=/tmp/cretacea-save "YourBuild.app/Contents/MacOS/CretaceaBlackoutUnity" -cretaceaSmoke /tmp/cretacea-smoke
@@ -209,20 +231,29 @@ CRETACEA_SAVE_DIR=/tmp/cretacea-save "YourBuild.app/Contents/MacOS/CretaceaBlack
 ## Known limitations
 
 - Tested only on macOS with Apple Silicon. Windows and Linux are untested.
-- The first launch of a new build compiles shaders, which causes a stall of several seconds in the menu and again when
-  the world loads. Later launches are smooth.
+- The first launch of a new build compiles shaders: the menu froze for about 16 seconds on an Apple M5 Max, and there
+  is another stall when the world loads. Later launches are smooth.
 - From the air at dusk, the far hill's trees show a mosaic pattern (it needs a proper impostor shader). Dawn meadow
   trees are slightly brown and the tall grass is a little too saturated.
 - The held hand's fingers do not move (it is a single scanned model), and the T. rex roar pose is weak.
 - Some rooms (the break room, the gift shop) are still sparsely dressed, and the first room of the game is evenly lit.
 - The playthrough bot cannot open some closed doors on its own, so no single bot run has gone from NEW GAME to the end.
   A bot run from the Records Annex checkpoint did finish the game; a player opens those doors with E.
-- The scenes are binary files, so Git cannot show what changed inside them. Change the builders instead.
+- `MainWorld.unity` (78 MB) and the terrain data files are stored in binary, so Git cannot show what changed inside
+  them (`MainMenu.unity` is text). Change the builders instead.
 - `docs/review4` lists the remaining smaller issues.
 
 ## License
 
-The original work in this repository (code, scenes, docs and the art and audio made for this project) is dedicated to
-the public domain under [CC0 1.0](LICENSE): use it for anything, no credit required. Third-party content keeps its own
-license; see [CREDITS.md](CREDITS.md). The VARCO Sound editor plugin (a commercial Asset Store tool used during
-development) is not included; the game does not need it, and every sound it plays is in `Assets/Audio`.
+[LICENSE](LICENSE) (CC0 1.0) dedicates the code, scenes, shaders, docs and the art and sounds made by this project's own
+scripts to the public domain: the UI, documents, maps, signs, logo, decals and procedural textures, the buildings,
+terrain and boat built by the editor scripts, and three sounds synthesized with NumPy. Use those for anything, no
+credit required.
+
+Not covered by this dedication: the fonts (SIL Open Font License), `Assets/TextMesh Pro` and `Assets/Settings` (Unity
+Companion License, for use with Unity only), one MIT-licensed hash function in `CretaceaWetSurface.shader`, and the
+AI-generated Tripo models, VARCO Sound effects, ambience and music, and Fish Audio voices. Those services' terms apply:
+check the terms, or replace the files, before you sell a game built on them. The Poly Haven textures, HDRIs, plants
+and rocks are CC0. [CREDITS.md](CREDITS.md) lists the sources and their licenses. The VARCO Sound editor plugin (a
+commercial Asset Store tool used during development) is not included; the game does not need it, and every sound it
+plays is in `Assets/Audio`.

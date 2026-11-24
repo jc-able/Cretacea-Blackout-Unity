@@ -1,7 +1,8 @@
 # Lead scripts (copies of the session's working scripts)
 
-These ran from the session's scratch folder; the copies here are the record. Paths inside them point at that scratch
-folder for logs and outputs: change `S=` / `O=` before reuse.
+These ran from the session's scratch folder; the copies here are the record. Paths inside them point at folders on the
+original machine (the owner's project in `~/CretaceaBlackoutUnity`, the verification clone in `~/CretaceaUnityClones/vfx`,
+Homebrew in `/opt/homebrew`): change them before reuse.
 
 - `lead_pass.sh <tag>`: full pass on the verification clone (recompile, profiles, `build_all_scenes`, doors, capture
   set into `Screenshots/<tag>`, route test).

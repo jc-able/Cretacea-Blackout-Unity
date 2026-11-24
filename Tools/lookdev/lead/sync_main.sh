@@ -25,7 +25,7 @@ git tag -f pre-sync-$(date +%m%d-%H%M) >/dev/null
 git fetch -q "$SRC" "$BR:$BR"
 git stash push -q -m "generated files before sync $(date +%H:%M)" 2>/dev/null; git stash list | head -2
 # untracked files that the branch brings would block the fast-forward: move them aside (they are older copies)
-ASIDE=/private/tmp/claude-501/-Users-jc-able-Desktop/9d5b6ec1-be2e-4d6b-8f6a-8a96d2ed0c5e/scratchpad/main_untracked_$(date +%H%M); mkdir -p "$ASIDE"
+ASIDE="${TMPDIR:-/tmp}/cretacea_main_untracked_$(date +%H%M)"; mkdir -p "$ASIDE"
 git ls-files --others --exclude-standard | while read -r f; do if git cat-file -e "$BR:$f" 2>/dev/null; then mkdir -p "$ASIDE/$(dirname "$f")"; mv "$f" "$ASIDE/$f"; echo "moved aside: $f"; fi; done
 git merge -q --ff-only "$BR" && say "main now at $(git rev-parse --short HEAD)" || { echo "fast-forward failed: stop"; exit 5; }
 # 3. import + compile

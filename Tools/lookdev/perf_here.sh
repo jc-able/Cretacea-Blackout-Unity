@@ -3,7 +3,7 @@
 source "$(dirname "$0")/ucli.sh"
 N="${2:-6}"; F=/tmp/_perfh_$$.txt; : > $F
 for i in $(seq 1 $N); do unity command diagnostics get_performance 2>/dev/null | grep -E "^render|^frameTiming" | tr '\n' ' ' >> $F; echo >> $F; /bin/sleep 0.6; done
-/opt/homebrew/bin/python3 - "$1" $F <<'PY'
+"${PYTHON:-python3}" - "$1" $F <<'PY'
 import sys,re,statistics
 name,p=sys.argv[1],sys.argv[2]
 g=[];c=[];t=[]

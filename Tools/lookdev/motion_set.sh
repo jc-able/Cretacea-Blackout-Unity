@@ -7,7 +7,7 @@ OUT="${1:?out dir}"; shift
 SEGS="$*"; [ -z "$SEGS" ] && SEGS="hand_idle intro_trex raptor_cross trex_reveal trex_walk_side visitors"
 cd "$UNITY_PROJECT_PATH" || exit 1
 mkdir -p "$OUT"
-PY=/opt/homebrew/bin/python3; FF=/opt/homebrew/bin/ffmpeg
+PY="${PYTHON:-python3}"; FF="${FFMPEG:-ffmpeg}"   # Python 3 with Pillow, and ffmpeg, from PATH (override with PYTHON= / FFMPEG=)
 has() { case " $SEGS " in *" $1 "*) return 0;; esac; return 1; }
 ts() { ev "UnityEngine.Time.timeScale = ${1}f; return \"ts\";" >/dev/null; }
 start() { ev "Cretacea.Story.StoryDirector.Instance.StartFromCheckpoint(Cretacea.Core.CheckpointId.$1, true); return \"ok\";" >/dev/null; /bin/sleep ${2:-6}; }

@@ -13,7 +13,7 @@ namespace Cretacea.UI
     /// timestamps, subtitles, or clipped titles!):
     /// - Live 3D HDRP Main Menu (dark-glass left sidebar over live Isla Tormenta storm scene — never baked menu_bg.jpg!)
     /// - Pause Menu (hides HUD timestamp cards & subtitles cleanly)
-    /// - Settings Modal (generous 64 px header clearance so "CRETACEA" never clips; live audio/sensitivity/FOV/quality)
+    /// - Settings Modal (generous 64 px header clearance so "CRETACEA" never clips; live audio/sensitivity/FOV)
     /// - Chapter Select (all 7 chapters)
     /// - Document Inspection Modal (zoomable image + readable summary; clean close)
     /// - Death / Retry Overlay & Dawn Coast Ending Summary + Credits (accurate 5/5 documents & completion stats!)

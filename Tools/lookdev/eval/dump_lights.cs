@@ -15,5 +15,7 @@ foreach (var l in lights.OrderBy(x => x.transform.position.x))
         path, l.type, l.enabled, l.gameObject.activeInHierarchy, l.intensity, l.lightUnit, l.color.r, l.color.g, l.color.b, l.useColorTemperature, l.colorTemperature, l.range, l.spotAngle, l.innerSpotAngle, l.shadows,
         hd != null ? hd.volumetricDimmer : -1f, hd != null && hd.affectsVolumetric, l.transform.position.x, l.transform.position.y, l.transform.position.z, l.cookie != null ? l.cookie.name : "-", hd != null ? (hd.affectDiffuse ? "D" : "") + (hd.affectSpecular ? "S" : "") : "?"));
 }
-System.IO.File.WriteAllText("/private/tmp/claude-501/-Users-jc-able--claude-spares-spare-jxQboM/9d5b6ec1-be2e-4d6b-8f6a-8a96d2ed0c5e/scratchpad/unity/dump/lights.txt", sb.ToString());
+var dumpDir = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(UnityEngine.Application.dataPath), "Logs", "dump");
+System.IO.Directory.CreateDirectory(dumpDir);
+System.IO.File.WriteAllText(System.IO.Path.Combine(dumpDir, "lights.txt"), sb.ToString());
 return "lights=" + lights.Length;

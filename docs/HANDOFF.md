@@ -1,12 +1,13 @@
 # Cretacea: Blackout (Unity) — handoff
 
 Unity 6000.6.9f1, HDRP 17.6.0, Apple Silicon/Metal. Port of the Godot game at `~/CretaceaBlackout`
-(repo jc-able/CretaceaBlackout, devlog in `docs/devlog/` there). First Unity build: Gemini 4 Neon swarm in
-Antigravity, Nov 19 2026 21:28 to Nov 20 00:21 (notes: `~/.gemini/antigravity/brain/c65ff93a-…/scratch/`).
+(public source: https://github.com/jc-able/Cretacea-Blackout-Godot, devlog in `docs/devlog/` there). First Unity
+build: Gemini 4 Neon swarm in Antigravity, Nov 19 2026 21:28 to Nov 20 00:21 (notes: `antigravity_scratch/` on the
+original machine).
 Since Nov 20 00:42: Claude (Fable 5.2) look pass, goal from JC: "the colors are off … make this game look
 amazing … perfect … don't stop until it's completely done".
 
-## How to drive the open editor (never close it; JC records his screen; VARCO Sound tab must stay docked)
+## How to drive the open editor (JC's setup; the VARCO Sound plugin he kept docked is not included in this repo)
 ```bash
 source ~/CretaceaBlackoutUnity/Tools/lookdev/ucli.sh      # PATH + UNITY_PROJECT_PATH + helpers ev / evf / gv
 unity status                                               # port 7800, state ready
