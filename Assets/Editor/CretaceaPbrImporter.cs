@@ -226,6 +226,10 @@ namespace Cretacea.Editor
             // VFX & Decal alpha maps (rain streaks, splashes, cookies, blood, footprints, grime, chainlink)
             if (lowerPath.Contains("/vfx/") || lowerPath.Contains("/decals/"))
             {
+                // puddle_mask.png was imported (linear, no alpha-is-transparency) before this rule existed and every
+                // build used those settings: keep the values stored in its .meta so a fresh import matches them.
+                if (lowerName == "puddle_mask")
+                    return;
                 importer.textureType = TextureImporterType.Default;
                 importer.sRGBTexture = true;
                 importer.alphaSource = TextureImporterAlphaSource.FromInput;
