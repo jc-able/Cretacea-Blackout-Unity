@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a848d02319224c468277b8c31640d63, type: 3}
+  m_Name: DinoConfig_Tyrannosaurus
+  m_EditorClassIdentifier: Cretacea.AI::Cretacea.AI.DinoConfig
+  speciesType: 1
+  speciesKey: trex
+  displayName: Tyrannosaurus
+  navMeshAgentTypeName: Agent_TRex
+  agentRadius: 1.45
+  agentHeight: 4.4
+  eyeHeight: 3.85
+  turnSpeedDegPerSec: 135
+  acceleration: 8.5
+  stoppingDistance: 2.6
+  stalkSpeed: 1.8
+  walkSpeed: 2.6
+  runSpeed: 7
+  stalkClipStrideSpeed: 2.6
+  walkClipStrideSpeed: 2.6
+  runClipStrideSpeed: 7
+  minAnimSpeedScale: 0.55
+  maxAnimSpeedScale: 1.38
+  turnInPlaceAngleThresholdDeg: 45
+  turnInPlaceMaxSpeed: 0.4
+  sightRangeMeters: 62
+  sightFovDegrees: 150
+  hearingSensitivity: 1.25
+  awarenessGainRate: 0.78
+  awarenessDecayRate: 0.18
+  alertThreshold: 0.45
+  huntThreshold: 1
+  alertHoldSeconds: 2.2
+  loseSightSeconds: 7
+  searchDurationSeconds: 9
+  attackRangeMeters: 7.5
+  killRangeMeters: 5
+  attackCooldownSeconds: 2.1
+  attackHitDelaySeconds: 0.55
+  canBashDoors: 0
+  doorBashRange: 4.5
+  doorBashCooldown: 2
+  footstepSoundId: trex_step
+  alertSoundId: trex_snort
+  roarSoundId: trex_roar_close
+  sniffSoundId: trex_snort
+  biteSoundId: trex_bite
+  breathSoundId: trex_breath
+  footstepTraumaMax: 0.36
+  footstepTraumaRadius: 46
+  roarTraumaMax: 0.65
+  roarTraumaRadius: 85
+  emitGroundFootprints: 1
+  idleClipName: Idle_Heavy
+  stalkClipName: Walk_Stomp
+  walkClipName: Walk_Stomp
+  runClipName: Charge_Run
+  turnLeftClipName: 
+  turnRightClipName: 
+  inspectClipName: Look_Scan
+  roarClipName: Roar_Massive
+  biteClipName: Bite_Snap
+  bashClipName: Fence_Bash
+  clipSpecs:
+  - clipName: Idle_Heavy
+    naturalStrideSpeed: 0
+    durationSeconds: 4
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Walk_Stomp
+    naturalStrideSpeed: 2.6
+    durationSeconds: 1.6
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.25
+    - 0.75
+  - clipName: Charge_Run
+    naturalStrideSpeed: 7
+    durationSeconds: 0.8
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.22
+    - 0.72
+  - clipName: Roar_Massive
+    naturalStrideSpeed: 0
+    durationSeconds: 3.2
+    loop: 0
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Look_Scan
+    naturalStrideSpeed: 0
+    durationSeconds: 4
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Bite_Snap
+    naturalStrideSpeed: 0
+    durationSeconds: 1.4
+    loop: 0
+    hitOrImpactTimeSeconds: 0.55
+    footstepNormalizedTimes: []
+  - clipName: Fence_Bash
+    naturalStrideSpeed: 0
+    durationSeconds: 2
+    loop: 0
+    hitOrImpactTimeSeconds: 0.85
+    footstepNormalizedTimes: []
+  rigOverrides:
+    isQuadruped: 0
+    rootBone: Root
+    pelvisBone: Pelvis
+    headBone: Head
+    jawBone: Jaw
+    spineBones:
+    - Spine_01
+    - Spine_02
+    - Spine_03
+    neckBones:
+    - Neck_01
+    - Neck_02
+    tailBones:
+    - Tail_01
+    - Tail_02
+    - Tail_03
+    - Tail_04
+    - Tail_05
+    - Tail_06
+    leftFootBone: LeftFoot
+    rightFootBone: RightFoot
+    leftFrontFootBone: 
+    rightFrontFootBone: 
+    maxNeckYawDeg: 55
+    maxNeckPitchDeg: 28
+    jawMaxOpenDeg: 42
+    jawAxisSign: 1
+    footGroundClearance: 0.02
+    maxPelvisDropMeters: 0.55
+    maxPelvisLiftMeters: 0.35
+    maxFootSlopeAlignDeg: 28

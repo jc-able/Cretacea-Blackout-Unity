@@ -1,0 +1,19 @@
+{
+  "name": "Cretacea.Story",
+  "rootNamespace": "Cretacea.Story",
+  "references": [
+    "Cretacea.Core",
+    "Cretacea.Player",
+    "Cretacea.Interact",
+    "Unity.Cinemachine"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

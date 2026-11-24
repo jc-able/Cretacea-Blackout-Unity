@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a848d02319224c468277b8c31640d63, type: 3}
+  m_Name: DinoConfig_Brachiosaurus
+  m_EditorClassIdentifier: Cretacea.AI::Cretacea.AI.DinoConfig
+  speciesType: 2
+  speciesKey: brachiosaurus
+  displayName: Brachiosaurus
+  navMeshAgentTypeName: Agent_TRex
+  agentRadius: 1.65
+  agentHeight: 12
+  eyeHeight: 11.5
+  turnSpeedDegPerSec: 52
+  acceleration: 2.8
+  stoppingDistance: 3
+  stalkSpeed: 0.95
+  walkSpeed: 1.35
+  runSpeed: 2
+  stalkClipStrideSpeed: 1.35
+  walkClipStrideSpeed: 1.35
+  runClipStrideSpeed: 1.35
+  minAnimSpeedScale: 0.55
+  maxAnimSpeedScale: 1.5259259
+  turnInPlaceAngleThresholdDeg: 55
+  turnInPlaceMaxSpeed: 0.25
+  sightRangeMeters: 35
+  sightFovDegrees: 160
+  hearingSensitivity: 0.6
+  awarenessGainRate: 0.35
+  awarenessDecayRate: 0.25
+  alertThreshold: 0.6
+  huntThreshold: 99
+  alertHoldSeconds: 3
+  loseSightSeconds: 4
+  searchDurationSeconds: 0
+  attackRangeMeters: 0
+  killRangeMeters: 0
+  attackCooldownSeconds: 4
+  attackHitDelaySeconds: 0
+  canBashDoors: 0
+  doorBashRange: 2.15
+  doorBashCooldown: 1.1
+  footstepSoundId: trex_step
+  alertSoundId: sauropod_call_far
+  roarSoundId: sauropod_call_far
+  sniffSoundId: 
+  biteSoundId: 
+  breathSoundId: 
+  footstepTraumaMax: 0.16
+  footstepTraumaRadius: 38
+  roarTraumaMax: 0.12
+  roarTraumaRadius: 65
+  emitGroundFootprints: 0
+  idleClipName: Idle_Graze
+  stalkClipName: Walk_Majestic
+  walkClipName: Walk_Majestic
+  runClipName: Walk_Majestic
+  turnLeftClipName: 
+  turnRightClipName: 
+  inspectClipName: Idle_Graze
+  roarClipName: Head_Lift_Call
+  biteClipName: Head_Lift_Call
+  bashClipName: Head_Lift_Call
+  clipSpecs:
+  - clipName: Idle_Graze
+    naturalStrideSpeed: 0
+    durationSeconds: 6
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Walk_Majestic
+    naturalStrideSpeed: 1.35
+    durationSeconds: 3.2
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.12
+    - 0.37
+    - 0.62
+    - 0.87
+  - clipName: Head_Lift_Call
+    naturalStrideSpeed: 0
+    durationSeconds: 4
+    loop: 0
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  rigOverrides:
+    isQuadruped: 1
+    rootBone: Root
+    pelvisBone: Pelvis
+    headBone: Head
+    jawBone: Jaw
+    spineBones:
+    - Spine_01
+    - Spine_02
+    - Spine_03
+    neckBones:
+    - Neck_01
+    - Neck_02
+    - Neck_03
+    - Neck_04
+    - Neck_05
+    - Neck_06
+    tailBones:
+    - Tail_01
+    - Tail_02
+    - Tail_03
+    - Tail_04
+    - Tail_05
+    - Tail_06
+    leftFootBone: LeftFoot
+    rightFootBone: RightFoot
+    leftFrontFootBone: LeftFrontFoot
+    rightFrontFootBone: RightFrontFoot
+    maxNeckYawDeg: 50
+    maxNeckPitchDeg: 35
+    jawMaxOpenDeg: 22
+    jawAxisSign: 1
+    footGroundClearance: 0.02
+    maxPelvisDropMeters: 0.65
+    maxPelvisLiftMeters: 0.35
+    maxFootSlopeAlignDeg: 22

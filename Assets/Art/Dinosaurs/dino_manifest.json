@@ -1,0 +1,999 @@
+{
+  "meta": {
+    "project": "Cretacea: Blackout \u2014 Unity 6 HDRP AAA Rebuild",
+    "producer": "dino-rigger (Blender 5.2.2 LTS Headless Pipeline)",
+    "coordinate_convention": {
+      "engine": "Unity 6 Generic FBX",
+      "up_axis": "+Y",
+      "forward_axis": "+Z",
+      "right_axis": "+X",
+      "ground_plane": "Y = 0.000 m (strict foot-plant clearance on all clips)",
+      "unit_scale": "1.0 meter",
+      "fps": 30
+    },
+    "hdrp_texture_packing": {
+      "albedo": "4096x4096 sRGB PNG",
+      "normal": "4096x4096 OpenGL (+Y) Normal PNG",
+      "metallic": "4096x4096 Linear Grayscale PNG",
+      "roughness": "4096x4096 Linear Grayscale PNG",
+      "ao": "4096x4096 Linear Grayscale PNG",
+      "hdrp_mask_map": "4096x4096 Linear RGBA PNG (R=Metallic, G=AO, B=0, A=1-Roughness Smoothness)"
+    },
+    "ready_root": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity"
+  },
+  "assets": {
+    "raptor": {
+      "species": "raptor",
+      "scientific_name": "Velociraptor",
+      "fbx": "Velociraptor.fbx",
+      "textures_dir": "Textures",
+      "textures": {
+        "albedo": "Velociraptor_Albedo.png",
+        "normal": "Velociraptor_Normal.png",
+        "metallic": "Velociraptor_Metallic.png",
+        "roughness": "Velociraptor_Roughness.png",
+        "ao": "Velociraptor_AO.png",
+        "hdrp_mask_map": "Velociraptor_MaskMap.png"
+      },
+      "verts": 14330,
+      "tris": 28694,
+      "bone_count": 34,
+      "unity_dimensions_m": {
+        "width_x": 0.949,
+        "height_y_bind": 2.04,
+        "height_y_idle_stalk": 1.669,
+        "height_y_walk_stalk": 1.668,
+        "length_z": 3.24
+      },
+      "key_bones": {
+        "root": "Root",
+        "pelvis": "Pelvis",
+        "spine": [
+          "Spine_01",
+          "Spine_02",
+          "Spine_03"
+        ],
+        "neck": [
+          "Neck_01",
+          "Neck_02",
+          "Neck_03"
+        ],
+        "head": "Head",
+        "jaw": "Jaw",
+        "tail": [
+          "Tail_01",
+          "Tail_02",
+          "Tail_03",
+          "Tail_04",
+          "Tail_05",
+          "Tail_06"
+        ],
+        "left_foot": "LeftFoot",
+        "right_foot": "RightFoot",
+        "left_leg_chain": [
+          "Thigh_L",
+          "Shin_L",
+          "Metatarsus_L",
+          "LeftFoot",
+          "Toe_L"
+        ],
+        "right_leg_chain": [
+          "Thigh_R",
+          "Shin_R",
+          "Metatarsus_R",
+          "RightFoot",
+          "Toe_R"
+        ],
+        "left_arm_chain": [
+          "Shoulder_L",
+          "UpperArm_L",
+          "Forearm_L",
+          "Hand_L"
+        ],
+        "right_arm_chain": [
+          "Shoulder_R",
+          "UpperArm_R",
+          "Forearm_R",
+          "Hand_R"
+        ]
+      },
+      "clips": [
+        {
+          "name": "Idle_Alert",
+          "frames": 108,
+          "duration_s": 3.6,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Stalk_Walk",
+          "frames": 24,
+          "duration_s": 0.8,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 1.9
+        },
+        {
+          "name": "Sprint_Run",
+          "frames": 14,
+          "duration_s": 0.4667,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 6.2
+        },
+        {
+          "name": "Sniff_Inspect",
+          "frames": 96,
+          "duration_s": 3.2,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Roar_Call",
+          "frames": 66,
+          "duration_s": 2.2,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Bite_Lunge",
+          "frames": 33,
+          "duration_s": 1.1,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0,
+          "hit_time_s": 0.35
+        },
+        {
+          "name": "Turn_Left",
+          "frames": 24,
+          "duration_s": 0.8,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Turn_Right",
+          "frames": 24,
+          "duration_s": 0.8,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        }
+      ],
+      "deformation_audit": {
+        "Idle_Alert": {
+          "max_edge_stretch": 35.43,
+          "worst_stretch_frame": 44,
+          "min_z_m": -0.0,
+          "max_z_m": 1.6691
+        },
+        "Stalk_Walk": {
+          "max_edge_stretch": 64.274,
+          "worst_stretch_frame": 20,
+          "min_z_m": -0.0,
+          "max_z_m": 1.6682
+        },
+        "Sprint_Run": {
+          "max_edge_stretch": 76.211,
+          "worst_stretch_frame": 10,
+          "min_z_m": -0.0,
+          "max_z_m": 1.7168
+        },
+        "Sniff_Inspect": {
+          "max_edge_stretch": 43.507,
+          "worst_stretch_frame": 44,
+          "min_z_m": -0.0,
+          "max_z_m": 1.607
+        },
+        "Roar_Call": {
+          "max_edge_stretch": 56.74,
+          "worst_stretch_frame": 12,
+          "min_z_m": -0.0001,
+          "max_z_m": 2.0993
+        },
+        "Bite_Lunge": {
+          "max_edge_stretch": 61.393,
+          "worst_stretch_frame": 6,
+          "min_z_m": -0.0,
+          "max_z_m": 1.7091
+        },
+        "Turn_Left": {
+          "max_edge_stretch": 59.34,
+          "worst_stretch_frame": 6,
+          "min_z_m": -0.0,
+          "max_z_m": 1.6024
+        },
+        "Turn_Right": {
+          "max_edge_stretch": 59.949,
+          "worst_stretch_frame": 18,
+          "min_z_m": -0.0,
+          "max_z_m": 1.6064
+        }
+      },
+      "contact_sheets": [
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
+      ],
+      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/raptor/Velociraptor.fbx",
+      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/raptor/Textures",
+      "verification": {
+        "fbx_exists": true,
+        "fbx_size_mb": 4.51,
+        "fbx_mesh_count": 1,
+        "fbx_armature_count": 1,
+        "fbx_bone_count": 34,
+        "fbx_clips_verified": 8,
+        "fbx_clips_expected": 8,
+        "missing_clips": [],
+        "missing_bones": [],
+        "textures_4k_ok": true,
+        "hdrp_maskmap_rgba_ok": true,
+        "textures_detail": {
+          "albedo": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 15.08
+          },
+          "normal": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 9.31
+          },
+          "metallic": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.2
+          },
+          "roughness": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.26
+          },
+          "ao": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 0.85
+          },
+          "hdrp_mask_map": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGBA",
+            "mb": 3.04
+          }
+        },
+        "passed": true
+      }
+    },
+    "trex": {
+      "species": "trex",
+      "scientific_name": "Tyrannosaurus",
+      "fbx": "Tyrannosaurus.fbx",
+      "textures_dir": "Textures",
+      "textures": {
+        "albedo": "Tyrannosaurus_Albedo.png",
+        "normal": "Tyrannosaurus_Normal.png",
+        "metallic": "Tyrannosaurus_Metallic.png",
+        "roughness": "Tyrannosaurus_Roughness.png",
+        "ao": "Tyrannosaurus_AO.png",
+        "hdrp_mask_map": "Tyrannosaurus_MaskMap.png"
+      },
+      "verts": 24756,
+      "tris": 49516,
+      "bone_count": 33,
+      "unity_dimensions_m": {
+        "width_x": 4.203,
+        "height_y": 5.523,
+        "length_z": 11.2
+      },
+      "key_bones": {
+        "root": "Root",
+        "pelvis": "Pelvis",
+        "spine": [
+          "Spine_01",
+          "Spine_02",
+          "Spine_03"
+        ],
+        "neck": [
+          "Neck_01",
+          "Neck_02"
+        ],
+        "head": "Head",
+        "jaw": "Jaw",
+        "tail": [
+          "Tail_01",
+          "Tail_02",
+          "Tail_03",
+          "Tail_04",
+          "Tail_05",
+          "Tail_06"
+        ],
+        "left_foot": "LeftFoot",
+        "right_foot": "RightFoot",
+        "left_leg_chain": [
+          "Thigh_L",
+          "Shin_L",
+          "Metatarsus_L",
+          "LeftFoot",
+          "Toe_L"
+        ],
+        "right_leg_chain": [
+          "Thigh_R",
+          "Shin_R",
+          "Metatarsus_R",
+          "RightFoot",
+          "Toe_R"
+        ],
+        "left_arm_chain": [
+          "Shoulder_L",
+          "UpperArm_L",
+          "Forearm_L",
+          "Hand_L"
+        ],
+        "right_arm_chain": [
+          "Shoulder_R",
+          "UpperArm_R",
+          "Forearm_R",
+          "Hand_R"
+        ]
+      },
+      "clips": [
+        {
+          "name": "Idle_Heavy",
+          "frames": 120,
+          "duration_s": 4.0,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Walk_Stomp",
+          "frames": 48,
+          "duration_s": 1.6,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 2.6
+        },
+        {
+          "name": "Charge_Run",
+          "frames": 24,
+          "duration_s": 0.8,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 7.0
+        },
+        {
+          "name": "Roar_Massive",
+          "frames": 96,
+          "duration_s": 3.2,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Look_Scan",
+          "frames": 120,
+          "duration_s": 4.0,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Bite_Snap",
+          "frames": 42,
+          "duration_s": 1.4,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0,
+          "hit_time_s": 0.55
+        },
+        {
+          "name": "Fence_Bash",
+          "frames": 60,
+          "duration_s": 2.0,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0,
+          "impact_time_s": 0.85
+        }
+      ],
+      "deformation_audit": {
+        "Idle_Heavy": {
+          "max_edge_stretch": 13.818,
+          "worst_stretch_frame": 42,
+          "min_z_m": 0.0004,
+          "max_z_m": 5.5994
+        },
+        "Walk_Stomp": {
+          "max_edge_stretch": 30.673,
+          "worst_stretch_frame": 42,
+          "min_z_m": -0.0,
+          "max_z_m": 5.8597
+        },
+        "Charge_Run": {
+          "max_edge_stretch": 43.237,
+          "worst_stretch_frame": 18,
+          "min_z_m": -0.0,
+          "max_z_m": 6.1507
+        },
+        "Roar_Massive": {
+          "max_edge_stretch": 30.217,
+          "worst_stretch_frame": 18,
+          "min_z_m": -0.0001,
+          "max_z_m": 7.4417
+        },
+        "Look_Scan": {
+          "max_edge_stretch": 16.925,
+          "worst_stretch_frame": 27,
+          "min_z_m": -0.0,
+          "max_z_m": 5.6959
+        },
+        "Bite_Snap": {
+          "max_edge_stretch": 22.74,
+          "worst_stretch_frame": 9,
+          "min_z_m": -0.0,
+          "max_z_m": 6.1702
+        },
+        "Fence_Bash": {
+          "max_edge_stretch": 37.003,
+          "worst_stretch_frame": 15,
+          "min_z_m": -0.0,
+          "max_z_m": 6.1293
+        }
+      },
+      "contact_sheets": [
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_1_anatomy_closeups.png",
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_2_animations.png"
+      ],
+      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex/Tyrannosaurus.fbx",
+      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex/Textures",
+      "verification": {
+        "fbx_exists": true,
+        "fbx_size_mb": 6.07,
+        "fbx_mesh_count": 1,
+        "fbx_armature_count": 1,
+        "fbx_bone_count": 33,
+        "fbx_clips_verified": 7,
+        "fbx_clips_expected": 7,
+        "missing_clips": [],
+        "missing_bones": [],
+        "textures_4k_ok": true,
+        "hdrp_maskmap_rgba_ok": true,
+        "textures_detail": {
+          "albedo": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 15.65
+          },
+          "normal": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 8.62
+          },
+          "metallic": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.45
+          },
+          "roughness": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.63
+          },
+          "ao": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.89
+          },
+          "hdrp_mask_map": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGBA",
+            "mb": 6.94
+          }
+        },
+        "passed": true
+      }
+    },
+    "sauropod": {
+      "species": "sauropod",
+      "scientific_name": "Brachiosaurus",
+      "fbx": "Brachiosaurus.fbx",
+      "textures_dir": "Textures",
+      "textures": {
+        "albedo": "Brachiosaurus_Albedo.png",
+        "normal": "Brachiosaurus_Normal.png",
+        "metallic": "Brachiosaurus_Metallic.png",
+        "roughness": "Brachiosaurus_Roughness.png",
+        "ao": "Brachiosaurus_AO.png",
+        "hdrp_mask_map": "Brachiosaurus_MaskMap.png"
+      },
+      "verts": 14782,
+      "tris": 29568,
+      "bone_count": 33,
+      "unity_dimensions_m": {
+        "width_x": 3.485,
+        "height_y": 16.081,
+        "length_z": 19.007
+      },
+      "key_bones": {
+        "root": "Root",
+        "pelvis": "Pelvis",
+        "spine": [
+          "Spine_01",
+          "Spine_02",
+          "Spine_03"
+        ],
+        "neck": [
+          "Neck_01",
+          "Neck_02",
+          "Neck_03",
+          "Neck_04",
+          "Neck_05",
+          "Neck_06"
+        ],
+        "head": "Head",
+        "jaw": "Jaw",
+        "tail": [
+          "Tail_01",
+          "Tail_02",
+          "Tail_03",
+          "Tail_04",
+          "Tail_05",
+          "Tail_06"
+        ],
+        "left_foot": "LeftFoot",
+        "right_foot": "RightFoot",
+        "left_front_foot": "LeftFrontFoot",
+        "right_front_foot": "RightFrontFoot"
+      },
+      "clips": [
+        {
+          "name": "Idle_Graze",
+          "frames": 180,
+          "duration_s": 6.0,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Walk_Majestic",
+          "frames": 96,
+          "duration_s": 3.2,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 1.35
+        },
+        {
+          "name": "Head_Lift_Call",
+          "frames": 120,
+          "duration_s": 4.0,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0
+        }
+      ],
+      "deformation_audit": {
+        "Idle_Graze": {
+          "max_edge_stretch": 2.881,
+          "worst_stretch_frame": 152,
+          "min_z_m": -0.0,
+          "max_z_m": 16.3786
+        },
+        "Walk_Majestic": {
+          "max_edge_stretch": 12.342,
+          "worst_stretch_frame": 4,
+          "min_z_m": -0.0,
+          "max_z_m": 15.9976
+        },
+        "Head_Lift_Call": {
+          "max_edge_stretch": 4.15,
+          "worst_stretch_frame": 28,
+          "min_z_m": -0.0,
+          "max_z_m": 16.963
+        }
+      },
+      "contact_sheets": [
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_1_anatomy_closeups.png",
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_2_walk_cycle.png"
+      ],
+      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/sauropod/Brachiosaurus.fbx",
+      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/sauropod/Textures",
+      "verification": {
+        "fbx_exists": true,
+        "fbx_size_mb": 3.54,
+        "fbx_mesh_count": 1,
+        "fbx_armature_count": 1,
+        "fbx_bone_count": 33,
+        "fbx_clips_verified": 3,
+        "fbx_clips_expected": 3,
+        "missing_clips": [],
+        "missing_bones": [],
+        "textures_4k_ok": true,
+        "hdrp_maskmap_rgba_ok": true,
+        "textures_detail": {
+          "albedo": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 11.24
+          },
+          "normal": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 5.64
+          },
+          "metallic": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.16
+          },
+          "roughness": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.13
+          },
+          "ao": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.57
+          },
+          "hdrp_mask_map": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGBA",
+            "mb": 5.71
+          }
+        },
+        "passed": true
+      }
+    },
+    "triceratops": {
+      "species": "triceratops",
+      "scientific_name": "Triceratops",
+      "fbx": "Triceratops.fbx",
+      "textures_dir": "Textures",
+      "textures": {
+        "albedo": "Triceratops_Albedo.png",
+        "normal": "Triceratops_Normal.png",
+        "metallic": "Triceratops_Metallic.png",
+        "roughness": "Triceratops_Roughness.png",
+        "ao": "Triceratops_AO.png",
+        "hdrp_mask_map": "Triceratops_MaskMap.png"
+      },
+      "verts": 11801,
+      "tris": 23598,
+      "bone_count": 26,
+      "unity_dimensions_m": {
+        "width_x": 2.328,
+        "height_y": 3.614,
+        "length_z": 7.6
+      },
+      "key_bones": {
+        "root": "Root",
+        "pelvis": "Pelvis",
+        "spine": [
+          "Spine_01",
+          "Spine_02",
+          "Spine_03"
+        ],
+        "neck": [
+          "Neck_01"
+        ],
+        "head": "Head",
+        "jaw": "Jaw",
+        "tail": [
+          "Tail_01",
+          "Tail_02",
+          "Tail_03",
+          "Tail_04"
+        ],
+        "left_foot": "LeftFoot",
+        "right_foot": "RightFoot",
+        "left_front_foot": "LeftFrontFoot",
+        "right_front_foot": "RightFrontFoot"
+      },
+      "clips": [
+        {
+          "name": "Idle_Alert",
+          "frames": 135,
+          "duration_s": 4.5,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 0.0
+        },
+        {
+          "name": "Walk_Heavy",
+          "frames": 54,
+          "duration_s": 1.8,
+          "fps": 30,
+          "loop": true,
+          "stride_speed_mps": 1.3
+        },
+        {
+          "name": "Snort_Threat",
+          "frames": 78,
+          "duration_s": 2.6,
+          "fps": 30,
+          "loop": false,
+          "stride_speed_mps": 0.0
+        }
+      ],
+      "deformation_audit": {
+        "Idle_Alert": {
+          "max_edge_stretch": 5.818,
+          "worst_stretch_frame": 120,
+          "min_z_m": -0.0,
+          "max_z_m": 3.6262
+        },
+        "Walk_Heavy": {
+          "max_edge_stretch": 10.706,
+          "worst_stretch_frame": 21,
+          "min_z_m": -0.0,
+          "max_z_m": 3.6549
+        },
+        "Snort_Threat": {
+          "max_edge_stretch": 18.379,
+          "worst_stretch_frame": 42,
+          "min_z_m": -0.0,
+          "max_z_m": 3.613
+        }
+      },
+      "contact_sheets": [
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_1_anatomy_closeups.png",
+        "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_2_walk_cycle.png"
+      ],
+      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/triceratops/Triceratops.fbx",
+      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/triceratops/Textures",
+      "verification": {
+        "fbx_exists": true,
+        "fbx_size_mb": 2.59,
+        "fbx_mesh_count": 1,
+        "fbx_armature_count": 1,
+        "fbx_bone_count": 26,
+        "fbx_clips_verified": 3,
+        "fbx_clips_expected": 3,
+        "missing_clips": [],
+        "missing_bones": [],
+        "textures_4k_ok": true,
+        "hdrp_maskmap_rgba_ok": true,
+        "textures_detail": {
+          "albedo": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 14.82
+          },
+          "normal": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 7.88
+          },
+          "metallic": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.73
+          },
+          "roughness": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.79
+          },
+          "ao": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.26
+          },
+          "hdrp_mask_map": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGBA",
+            "mb": 4.54
+          }
+        },
+        "passed": true
+      }
+    },
+    "trex_skeleton": {
+      "species": "trex_skeleton",
+      "type": "static_fossil_prop",
+      "fbx": "TrexSkeleton.fbx",
+      "textures_dir": "Textures",
+      "textures": {
+        "albedo": "TrexSkeleton_Albedo.png",
+        "normal": "TrexSkeleton_Normal.png",
+        "metallic": "TrexSkeleton_Metallic.png",
+        "roughness": "TrexSkeleton_Roughness.png",
+        "ao": "TrexSkeleton_AO.png",
+        "hdrp_mask_map": "TrexSkeleton_MaskMap.png"
+      },
+      "verts": 25394,
+      "tris": 38120,
+      "unity_dimensions_m": {
+        "width_x": 3.439,
+        "height_y": 7.851,
+        "length_z": 12.0
+      },
+      "unity_bounds_min_m": [
+        -1.7194,
+        0.0,
+        -6.0
+      ],
+      "unity_bounds_max_m": [
+        1.7194,
+        7.8505,
+        6.0
+      ],
+      "pivot": "base_center_Y0",
+      "forward_axis_unity": "+Z",
+      "up_axis_unity": "+Y",
+      "contact_sheet": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex_skeleton/trex_skeleton_contact_sheet.png",
+      "fbx_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex_skeleton/TrexSkeleton.fbx",
+      "textures_path": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/ready_for_unity/trex_skeleton/Textures",
+      "verification": {
+        "fbx_exists": true,
+        "fbx_size_mb": 2.72,
+        "fbx_mesh_count": 1,
+        "fbx_armature_count": 0,
+        "fbx_bone_count": 0,
+        "fbx_clips_verified": 0,
+        "fbx_clips_expected": 0,
+        "missing_clips": [],
+        "missing_bones": [],
+        "textures_4k_ok": true,
+        "hdrp_maskmap_rgba_ok": true,
+        "textures_detail": {
+          "albedo": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 9.3
+          },
+          "normal": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGB",
+            "mb": 4.37
+          },
+          "metallic": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.02
+          },
+          "roughness": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 2.08
+          },
+          "ao": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "L",
+            "mb": 1.48
+          },
+          "hdrp_mask_map": {
+            "ok": true,
+            "size": [
+              4096,
+              4096
+            ],
+            "mode": "RGBA",
+            "mb": 5.27
+          }
+        },
+        "passed": true
+      }
+    }
+  }
+}

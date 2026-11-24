@@ -1,0 +1,96 @@
+{
+  "species": "triceratops",
+  "scientific_name": "Triceratops",
+  "fbx": "Triceratops.fbx",
+  "textures_dir": "Textures",
+  "textures": {
+    "albedo": "Triceratops_Albedo.png",
+    "normal": "Triceratops_Normal.png",
+    "metallic": "Triceratops_Metallic.png",
+    "roughness": "Triceratops_Roughness.png",
+    "ao": "Triceratops_AO.png",
+    "hdrp_mask_map": "Triceratops_MaskMap.png"
+  },
+  "verts": 11801,
+  "tris": 23598,
+  "bone_count": 26,
+  "unity_dimensions_m": {
+    "width_x": 2.328,
+    "height_y": 3.614,
+    "length_z": 7.6
+  },
+  "key_bones": {
+    "root": "Root",
+    "pelvis": "Pelvis",
+    "spine": [
+      "Spine_01",
+      "Spine_02",
+      "Spine_03"
+    ],
+    "neck": [
+      "Neck_01"
+    ],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tail": [
+      "Tail_01",
+      "Tail_02",
+      "Tail_03",
+      "Tail_04"
+    ],
+    "left_foot": "LeftFoot",
+    "right_foot": "RightFoot",
+    "left_front_foot": "LeftFrontFoot",
+    "right_front_foot": "RightFrontFoot"
+  },
+  "clips": [
+    {
+      "name": "Idle_Alert",
+      "frames": 135,
+      "duration_s": 4.5,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Walk_Heavy",
+      "frames": 54,
+      "duration_s": 1.8,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 1.3
+    },
+    {
+      "name": "Snort_Threat",
+      "frames": 78,
+      "duration_s": 2.6,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0
+    }
+  ],
+  "deformation_audit": {
+    "Idle_Alert": {
+      "max_edge_stretch": 5.818,
+      "worst_stretch_frame": 120,
+      "min_z_m": -0.0,
+      "max_z_m": 3.6262
+    },
+    "Walk_Heavy": {
+      "max_edge_stretch": 10.706,
+      "worst_stretch_frame": 21,
+      "min_z_m": -0.0,
+      "max_z_m": 3.6549
+    },
+    "Snort_Threat": {
+      "max_edge_stretch": 18.379,
+      "worst_stretch_frame": 42,
+      "min_z_m": -0.0,
+      "max_z_m": 3.613
+    }
+  },
+  "contact_sheets": [
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_1_anatomy_closeups.png",
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/triceratops/triceratops_sheet_2_walk_cycle.png"
+  ]
+}

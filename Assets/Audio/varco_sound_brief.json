@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "plugin": "VARCO Sound for Unity (NC AI)",
+  "unity_asset_store_url": "https://assetstore.unity.com/packages/package/3515231",
+  "default_output_folder": "Assets/VARCOSound/Generated/",
+  "recommended_format": "WAV 48 kHz 16-bit PCM (Mono for 3D positional SFX, Stereo for Ambience/2D)",
+  "summary": {
+    "missing_critical_slots": 6,
+    "priority_standin_upgrades": 9,
+    "bonus_surface_upgrades": 2,
+    "total_slots": 17
+  },
+  "missing_slots": [
+    {
+      "slot_id": "foley_crouch",
+      "priority": "P0_MISSING",
+      "variations": 3,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_crouch_01.wav",
+        "Assets/VARCOSound/Generated/foley_crouch_02.wav",
+        "Assets/VARCOSound/Generated/foley_crouch_03.wav"
+      ],
+      "target_duration_s": 0.65,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Close-up first-person foley of a park ranger crouching down quietly, damp nylon rain jacket rustling, leather utility belt creak, subtle knee fabric shift, clean studio foley, no footsteps, no background noise"
+    },
+    {
+      "slot_id": "foley_stand_up",
+      "priority": "P0_MISSING",
+      "variations": 3,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_stand_up_01.wav",
+        "Assets/VARCOSound/Generated/foley_stand_up_02.wav",
+        "Assets/VARCOSound/Generated/foley_stand_up_03.wav"
+      ],
+      "target_duration_s": 0.65,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Close-up first-person foley of a person standing back up from a crouch, waterproof rain jacket fabric straightening, subtle gear strap shift, crisp dry close-mic foley, no background noise"
+    },
+    {
+      "slot_id": "foley_grass_enter",
+      "priority": "P0_MISSING",
+      "variations": 4,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_grass_enter_01.wav",
+        "Assets/VARCOSound/Generated/foley_grass_enter_02.wav",
+        "Assets/VARCOSound/Generated/foley_grass_enter_03.wav",
+        "Assets/VARCOSound/Generated/foley_grass_enter_04.wav"
+      ],
+      "target_duration_s": 1.1,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Person stealthily pushing into dense waist-high wet tropical tall grass and ferns during rain, soft wet leafy swish and brushed stalks, realistic outdoor foley, no thunder, no voice"
+    },
+    {
+      "slot_id": "glass_crack_large",
+      "priority": "P0_MISSING",
+      "variations": 2,
+      "output_files": [
+        "Assets/VARCOSound/Generated/glass_crack_large_01.wav",
+        "Assets/VARCOSound/Generated/glass_crack_large_02.wav"
+      ],
+      "target_duration_s": 2.4,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -1.5,
+      "varco_prompt": "Massive architectural tempered glass atrium skylight panel violently spiderweb-cracking under stress then shattering overhead, sharp high-tension crack followed by cascading heavy glass shards echoing inside a concrete hall"
+    },
+    {
+      "slot_id": "bush_rustle_close",
+      "priority": "P0_MISSING",
+      "variations": 3,
+      "output_files": [
+        "Assets/VARCOSound/Generated/bush_rustle_close_01.wav",
+        "Assets/VARCOSound/Generated/bush_rustle_close_02.wav",
+        "Assets/VARCOSound/Generated/bush_rustle_close_03.wav"
+      ],
+      "target_duration_s": 1.8,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -2.0,
+      "varco_prompt": "Heavy fast-moving animal predator crashing and darting through dense wet tropical jungle bushes and palm fronds just meters away, snapping small twigs and shaking wet leaves, intense survival horror sound design"
+    },
+    {
+      "slot_id": "crowd_gasp_cheer",
+      "priority": "P0_MISSING",
+      "variations": 2,
+      "output_files": [
+        "Assets/VARCOSound/Generated/crowd_gasp_cheer_01.wav",
+        "Assets/VARCOSound/Generated/crowd_gasp_cheer_02.wav"
+      ],
+      "target_duration_s": 3.5,
+      "loop": false,
+      "channels": "stereo",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Small outdoor theme park visitor crowd of 25 adults and kids gasping in sudden awe followed by excited cheering and light applause behind a viewing railing, natural outdoor ambience, no music"
+    }
+  ],
+  "priority_standin_upgrades": [
+    {
+      "slot_id": "amb_coast_dawn_loop",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Noisy +30 dB boosted Dawn_coast_1.wav (interim denoised copy staged)",
+      "variations": 1,
+      "output_files": [
+        "Assets/VARCOSound/Generated/amb_coast_dawn_loop.wav"
+      ],
+      "target_duration_s": 30.0,
+      "loop": true,
+      "channels": "stereo",
+      "target_peak_dbfs": -6.0,
+      "varco_prompt": "Peaceful tropical volcanic island coastal cliff at dawn after a storm, rhythmic ocean waves breaking softly against rocky cliffs far below, gentle warm morning sea breeze, faint distant seabirds, clean seamless stereo ambient loop"
+    },
+    {
+      "slot_id": "amb_building_creak_loop",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Storm ambience bed reused as building creak",
+      "variations": 1,
+      "output_files": [
+        "Assets/VARCOSound/Generated/amb_building_creak_loop.wav"
+      ],
+      "target_duration_s": 24.0,
+      "loop": true,
+      "channels": "stereo",
+      "target_peak_dbfs": -8.0,
+      "varco_prompt": "Dark abandoned industrial concrete and steel glass atrium groaning and creaking under tropical storm wind gusts, subtle stressed metal roof trusses settling, eerie survival horror structural ambience, seamless loop"
+    },
+    {
+      "slot_id": "amb_interior_hum_loop",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Numpy-synthesized hum (Quiet_room_1 was silent)",
+      "variations": 1,
+      "output_files": [
+        "Assets/VARCOSound/Generated/amb_interior_hum_loop.wav"
+      ],
+      "target_duration_s": 20.0,
+      "loop": true,
+      "channels": "stereo",
+      "target_peak_dbfs": -12.0,
+      "varco_prompt": "Quiet late-night security control room interior room tone, low air conditioning ventilation airflow, subtle server rack cooling fans and faint fluorescent ballast hum, realistic clean seamless loop"
+    },
+    {
+      "slot_id": "raptor_sniff",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Pitch-shifted T. rex sniff",
+      "variations": 3,
+      "output_files": [
+        "Assets/VARCOSound/Generated/raptor_sniff_01.wav",
+        "Assets/VARCOSound/Generated/raptor_sniff_02.wav",
+        "Assets/VARCOSound/Generated/raptor_sniff_03.wav"
+      ],
+      "target_duration_s": 1.3,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -2.0,
+      "varco_prompt": "Close-up menacing velociraptor dinosaur stalking in the dark, sharp predatory nasal sniffs mixed with low raspy reptilian-avian throat clicking, dry studio creature vocalization"
+    },
+    {
+      "slot_id": "raptor_breath_close",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Pitch-shifted T. rex breath",
+      "variations": 2,
+      "output_files": [
+        "Assets/VARCOSound/Generated/raptor_breath_close_01.wav",
+        "Assets/VARCOSound/Generated/raptor_breath_close_02.wav"
+      ],
+      "target_duration_s": 2.0,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Terrifying close-mic hot hissing exhale and wet raspy predatory breathing of a large bird-like velociraptor dinosaur inches away in silence, chilling horror creature breath"
+    },
+    {
+      "slot_id": "fuel_pump_stroke",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Pitch-shifted boot squeaks",
+      "variations": 4,
+      "output_files": [
+        "Assets/VARCOSound/Generated/fuel_pump_stroke_01.wav",
+        "Assets/VARCOSound/Generated/fuel_pump_stroke_02.wav",
+        "Assets/VARCOSound/Generated/fuel_pump_stroke_03.wav",
+        "Assets/VARCOSound/Generated/fuel_pump_stroke_04.wav"
+      ],
+      "target_duration_s": 0.9,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -2.0,
+      "varco_prompt": "Single heavy manual cast-iron diesel hand-pump lever stroke, metallic ratchet clunk and thick pressurized liquid diesel glugging through a rubber hose"
+    },
+    {
+      "slot_id": "fuel_pump_primed",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Synthesized white-noise hiss",
+      "variations": 1,
+      "output_files": [
+        "Assets/VARCOSound/Generated/fuel_pump_primed_01.wav"
+      ],
+      "target_duration_s": 1.4,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -2.0,
+      "varco_prompt": "Industrial diesel fuel line reaching full prime pressure, heavy pressurized fluid thump and valve check-ball seating clunk followed by a crisp metallic release hiss"
+    },
+    {
+      "slot_id": "foley_step_grass_and_metal",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "Filtered concrete boot steps",
+      "variations": 6,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_step_grass_walk_01.wav",
+        "Assets/VARCOSound/Generated/foley_step_grass_walk_02.wav",
+        "Assets/VARCOSound/Generated/foley_step_grass_walk_03.wav",
+        "Assets/VARCOSound/Generated/foley_step_metal_walk_01.wav",
+        "Assets/VARCOSound/Generated/foley_step_metal_walk_02.wav",
+        "Assets/VARCOSound/Generated/foley_step_metal_walk_03.wav"
+      ],
+      "target_duration_s": 0.45,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "(A) Single heavy work-boot footstep on wet thick tropical grass and damp earth, soft leafy crunch. (B) Single heavy rubber-soled boot footstep on hollow industrial steel bar grating walkway, crisp metallic ring and clank"
+    },
+    {
+      "slot_id": "foley_pickup",
+      "priority": "P1_STANDIN_UPGRADE",
+      "replaces": "UI click tick stand-in",
+      "variations": 2,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_pickup_01.wav",
+        "Assets/VARCOSound/Generated/foley_pickup_02.wav"
+      ],
+      "target_duration_s": 0.55,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Tactile foley of a gloved hand picking up a heavy anodized aluminum tactical flashlight off a wooden desk, solid metallic lift and subtle leather grip settle"
+    }
+  ],
+  "bonus_surface_upgrades": [
+    {
+      "slot_id": "foley_step_mud",
+      "priority": "P2_BONUS",
+      "replaces": "Interim EQ-sculpted wet earth steps staged in Audio/SFX/Footsteps/Mud/",
+      "variations": 6,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_01.wav",
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_02.wav",
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_03.wav",
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_04.wav",
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_05.wav",
+        "Assets/VARCOSound/Generated/foley_step_mud_walk_06.wav"
+      ],
+      "target_duration_s": 0.5,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Single heavy rubber boot footstep sinking and pulling out of thick rain-soaked tropical jungle mud, realistic wet suction squelch"
+    },
+    {
+      "slot_id": "foley_step_water",
+      "priority": "P2_BONUS",
+      "replaces": "Interim filtered wet puddle steps staged in Audio/SFX/Footsteps/Water/",
+      "variations": 6,
+      "output_files": [
+        "Assets/VARCOSound/Generated/foley_step_water_walk_01.wav",
+        "Assets/VARCOSound/Generated/foley_step_water_walk_02.wav",
+        "Assets/VARCOSound/Generated/foley_step_water_walk_03.wav",
+        "Assets/VARCOSound/Generated/foley_step_water_walk_04.wav",
+        "Assets/VARCOSound/Generated/foley_step_water_walk_05.wav",
+        "Assets/VARCOSound/Generated/foley_step_water_walk_06.wav"
+      ],
+      "target_duration_s": 0.55,
+      "loop": false,
+      "channels": "mono",
+      "target_peak_dbfs": -3.0,
+      "varco_prompt": "Single heavy work-boot footstep splashing cleanly through a shallow rain puddle on concrete or rocky stream bed, crisp water splash droplets"
+    }
+  ]
+}

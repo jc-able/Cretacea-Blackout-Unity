@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MAT_WetPuddleOverlay
+  m_Shader: {fileID: 4800000, guid: 13e6da3ff96074cb58dc41a78b525720, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _PuddleMask:
+        m_Texture: {fileID: 2800000, guid: 16175cdc6114a4abc97bef114206b11b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RainRipplesNormal:
+        m_Texture: {fileID: 2800000, guid: 9ca108a0ee7f24758b3cbe88540fdd8c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DryInteriorMask: 0
+    - _PuddleTiling: 0.12
+    - _ReflectionIntensity: 1.8
+    - _RippleTiling: 1.6
+    - _UseRippleTex: 1
+    m_Colors:
+    - _FlipbookGrid: {r: 4, g: 4, b: 14, a: 0}
+    - _PuddleDarken: {r: 0.04, g: 0.049999982, b: 0.059999965, a: 0.72}
+    - _ReflectionColor: {r: 0.31999996, g: 0.43999997, b: 0.58, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

@@ -1,0 +1,103 @@
+{
+  "species": "sauropod",
+  "scientific_name": "Brachiosaurus",
+  "fbx": "Brachiosaurus.fbx",
+  "textures_dir": "Textures",
+  "textures": {
+    "albedo": "Brachiosaurus_Albedo.png",
+    "normal": "Brachiosaurus_Normal.png",
+    "metallic": "Brachiosaurus_Metallic.png",
+    "roughness": "Brachiosaurus_Roughness.png",
+    "ao": "Brachiosaurus_AO.png",
+    "hdrp_mask_map": "Brachiosaurus_MaskMap.png"
+  },
+  "verts": 14782,
+  "tris": 29568,
+  "bone_count": 33,
+  "unity_dimensions_m": {
+    "width_x": 3.485,
+    "height_y": 16.081,
+    "length_z": 19.007
+  },
+  "key_bones": {
+    "root": "Root",
+    "pelvis": "Pelvis",
+    "spine": [
+      "Spine_01",
+      "Spine_02",
+      "Spine_03"
+    ],
+    "neck": [
+      "Neck_01",
+      "Neck_02",
+      "Neck_03",
+      "Neck_04",
+      "Neck_05",
+      "Neck_06"
+    ],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tail": [
+      "Tail_01",
+      "Tail_02",
+      "Tail_03",
+      "Tail_04",
+      "Tail_05",
+      "Tail_06"
+    ],
+    "left_foot": "LeftFoot",
+    "right_foot": "RightFoot",
+    "left_front_foot": "LeftFrontFoot",
+    "right_front_foot": "RightFrontFoot"
+  },
+  "clips": [
+    {
+      "name": "Idle_Graze",
+      "frames": 180,
+      "duration_s": 6.0,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Walk_Majestic",
+      "frames": 96,
+      "duration_s": 3.2,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 1.35
+    },
+    {
+      "name": "Head_Lift_Call",
+      "frames": 120,
+      "duration_s": 4.0,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0
+    }
+  ],
+  "deformation_audit": {
+    "Idle_Graze": {
+      "max_edge_stretch": 2.881,
+      "worst_stretch_frame": 152,
+      "min_z_m": -0.0,
+      "max_z_m": 16.3786
+    },
+    "Walk_Majestic": {
+      "max_edge_stretch": 12.342,
+      "worst_stretch_frame": 4,
+      "min_z_m": -0.0,
+      "max_z_m": 15.9976
+    },
+    "Head_Lift_Call": {
+      "max_edge_stretch": 4.15,
+      "worst_stretch_frame": 28,
+      "min_z_m": -0.0,
+      "max_z_m": 16.963
+    }
+  },
+  "contact_sheets": [
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_1_anatomy_closeups.png",
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/sauropod/sauropod_sheet_2_walk_cycle.png"
+  ]
+}

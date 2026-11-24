@@ -1,0 +1,198 @@
+{
+  "species": "raptor",
+  "scientific_name": "Velociraptor",
+  "fbx": "Velociraptor.fbx",
+  "textures_dir": "Textures",
+  "textures": {
+    "albedo": "Velociraptor_Albedo.png",
+    "normal": "Velociraptor_Normal.png",
+    "metallic": "Velociraptor_Metallic.png",
+    "roughness": "Velociraptor_Roughness.png",
+    "ao": "Velociraptor_AO.png",
+    "hdrp_mask_map": "Velociraptor_MaskMap.png"
+  },
+  "verts": 14330,
+  "tris": 28694,
+  "bone_count": 34,
+  "unity_dimensions_m": {
+    "width_x": 0.949,
+    "height_y_bind": 2.04,
+    "height_y_idle_stalk": 1.669,
+    "height_y_walk_stalk": 1.668,
+    "length_z": 3.24
+  },
+  "key_bones": {
+    "root": "Root",
+    "pelvis": "Pelvis",
+    "spine": [
+      "Spine_01",
+      "Spine_02",
+      "Spine_03"
+    ],
+    "neck": [
+      "Neck_01",
+      "Neck_02",
+      "Neck_03"
+    ],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tail": [
+      "Tail_01",
+      "Tail_02",
+      "Tail_03",
+      "Tail_04",
+      "Tail_05",
+      "Tail_06"
+    ],
+    "left_foot": "LeftFoot",
+    "right_foot": "RightFoot",
+    "left_leg_chain": [
+      "Thigh_L",
+      "Shin_L",
+      "Metatarsus_L",
+      "LeftFoot",
+      "Toe_L"
+    ],
+    "right_leg_chain": [
+      "Thigh_R",
+      "Shin_R",
+      "Metatarsus_R",
+      "RightFoot",
+      "Toe_R"
+    ],
+    "left_arm_chain": [
+      "Shoulder_L",
+      "UpperArm_L",
+      "Forearm_L",
+      "Hand_L"
+    ],
+    "right_arm_chain": [
+      "Shoulder_R",
+      "UpperArm_R",
+      "Forearm_R",
+      "Hand_R"
+    ]
+  },
+  "clips": [
+    {
+      "name": "Idle_Alert",
+      "frames": 108,
+      "duration_s": 3.6,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Stalk_Walk",
+      "frames": 24,
+      "duration_s": 0.8,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 1.9
+    },
+    {
+      "name": "Sprint_Run",
+      "frames": 14,
+      "duration_s": 0.4667,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 6.2
+    },
+    {
+      "name": "Sniff_Inspect",
+      "frames": 96,
+      "duration_s": 3.2,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Roar_Call",
+      "frames": 66,
+      "duration_s": 2.2,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Bite_Lunge",
+      "frames": 33,
+      "duration_s": 1.1,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0,
+      "hit_time_s": 0.35
+    },
+    {
+      "name": "Turn_Left",
+      "frames": 24,
+      "duration_s": 0.8,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Turn_Right",
+      "frames": 24,
+      "duration_s": 0.8,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    }
+  ],
+  "deformation_audit": {
+    "Idle_Alert": {
+      "max_edge_stretch": 35.43,
+      "worst_stretch_frame": 44,
+      "min_z_m": -0.0,
+      "max_z_m": 1.6691
+    },
+    "Stalk_Walk": {
+      "max_edge_stretch": 64.274,
+      "worst_stretch_frame": 20,
+      "min_z_m": -0.0,
+      "max_z_m": 1.6682
+    },
+    "Sprint_Run": {
+      "max_edge_stretch": 76.211,
+      "worst_stretch_frame": 10,
+      "min_z_m": -0.0,
+      "max_z_m": 1.7168
+    },
+    "Sniff_Inspect": {
+      "max_edge_stretch": 43.507,
+      "worst_stretch_frame": 44,
+      "min_z_m": -0.0,
+      "max_z_m": 1.607
+    },
+    "Roar_Call": {
+      "max_edge_stretch": 56.74,
+      "worst_stretch_frame": 12,
+      "min_z_m": -0.0001,
+      "max_z_m": 2.0993
+    },
+    "Bite_Lunge": {
+      "max_edge_stretch": 61.393,
+      "worst_stretch_frame": 6,
+      "min_z_m": -0.0,
+      "max_z_m": 1.7091
+    },
+    "Turn_Left": {
+      "max_edge_stretch": 59.34,
+      "worst_stretch_frame": 6,
+      "min_z_m": -0.0,
+      "max_z_m": 1.6024
+    },
+    "Turn_Right": {
+      "max_edge_stretch": 59.949,
+      "worst_stretch_frame": 18,
+      "min_z_m": -0.0,
+      "max_z_m": 1.6064
+    }
+  },
+  "contact_sheets": [
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_1_anatomy_closeups.png",
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_2_animations.png",
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/raptor/raptor_sheet_3_turns.png"
+  ]
+}

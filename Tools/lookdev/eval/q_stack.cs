@@ -1,0 +1,24 @@
+using System.Linq;
+using System.Text;
+using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
+var sb = new StringBuilder();
+var st = VolumeManager.instance.stack;
+var ex = st.GetComponent<Exposure>();
+sb.AppendLine("stack exposure mode=" + ex.mode.value + " fixed=" + ex.fixedExposure.value + " comp=" + ex.compensation.value + " min=" + ex.limitMin.value + " max=" + ex.limitMax.value);
+var fog = st.GetComponent<Fog>();
+sb.AppendLine("fog enabled=" + fog.enabled.value + " vol=" + fog.enableVolumetricFog.value + " mfp=" + fog.meanFreePath.value + " base=" + fog.baseHeight.value + " maxH=" + fog.maximumHeight.value + " albedo=" + fog.albedo.value + " color=" + fog.color.value + " mode=" + fog.colorMode.value + " maxDist=" + fog.maxFogDistance.value + " aniso=" + fog.anisotropy.value + " probeDimmer=" + fog.globalLightProbeDimmer.value + " depthExtent=" + fog.depthExtent.value + " tint=" + fog.tint.value);
+var ve = st.GetComponent<VisualEnvironment>();
+sb.AppendLine("sky type=" + ve.skyType.value + " ambient=" + ve.skyAmbientMode.value + " clouds=" + ve.cloudType.value);
+var tm = st.GetComponent<Tonemapping>(); sb.AppendLine("tonemap=" + tm.mode.value);
+var ca = st.GetComponent<ColorAdjustments>(); sb.AppendLine("postExposure=" + ca.postExposure.value + " contrast=" + ca.contrast.value + " sat=" + ca.saturation.value + " filter=" + ca.colorFilter.value);
+var ilc = st.GetComponent<IndirectLightingController>(); sb.AppendLine("indirectDiffuse=" + ilc.indirectDiffuseLightingMultiplier.value + " refl=" + ilc.reflectionLightingMultiplier.value);
+var cam = Camera.main;
+// probe: what does a ray forward hit and at what distance
+if (Physics.Raycast(cam.transform.position, cam.transform.forward, out var hit, 200f, ~0, QueryTriggerInteraction.Ignore)) sb.AppendLine("forward hit " + hit.collider.name + " d=" + hit.distance.ToString("F1"));
+if (Physics.Raycast(cam.transform.position, cam.transform.right, out var hr, 200f, ~0, QueryTriggerInteraction.Ignore)) sb.AppendLine("right hit " + hr.collider.name + " d=" + hr.distance.ToString("F1"));
+if (Physics.Raycast(cam.transform.position, -cam.transform.right, out var hl, 200f, ~0, QueryTriggerInteraction.Ignore)) sb.AppendLine("left hit " + hl.collider.name + " d=" + hl.distance.ToString("F1"));
+foreach (var v in UnityEngine.Object.FindObjectsByType<Volume>(FindObjectsInactive.Include)) sb.AppendLine("vol " + v.name + " g=" + v.isGlobal + " w=" + v.weight + " p=" + v.priority + " layer=" + v.gameObject.layer + " enabled=" + v.enabled);
+foreach (var v in UnityEngine.Object.FindObjectsByType<CustomPassVolume>(FindObjectsInactive.Include)) sb.AppendLine("custompass " + v.name + " inj=" + v.injectionPoint + " passes=" + string.Join(",", v.customPasses.Select(p => p.GetType().Name + ":" + p.enabled)));
+return sb.ToString();

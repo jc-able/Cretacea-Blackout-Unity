@@ -1,0 +1,14 @@
+var a = Cretacea.Core.AtmosphereController.Instance;
+var t = typeof(Cretacea.Core.AtmosphereController);
+var bf = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public;
+object key = t.GetField("_liveKey", bf).GetValue(a);
+var kt = key.GetType();
+float el = (float)kt.GetField("elevationDeg").GetValue(key);
+float lux = (float)kt.GetField("lux").GetValue(key);
+var vols = (UnityEngine.Rendering.Volume[])t.GetField("_lookVolumes", bf).GetValue(a);
+string w = "";
+for (int i = 0; i < vols.Length; i++) w += (vols[i] != null && vols[i].enabled ? vols[i].weight.ToString("F2") : "-") + " ";
+var kl = (UnityEngine.Light)t.GetField("keyDirectionalLight", bf).GetValue(a);
+var hd = kl.GetComponent<UnityEngine.Rendering.HighDefinition.HDAdditionalLightData>();
+var cam = UnityEngine.Camera.main;
+return "t=" + UnityEngine.Time.time.ToString("F2") + " el=" + el.ToString("F1") + " lux=" + lux.ToString("F0") + " I=" + kl.intensity.ToString("F0") + " dim=" + hd.lightDimmer.ToString("F2") + " w[" + w + "] cam=" + cam.transform.position.ToString("F0") + " cuts=" + Cretacea.Player.CameraDirector.CutCount;

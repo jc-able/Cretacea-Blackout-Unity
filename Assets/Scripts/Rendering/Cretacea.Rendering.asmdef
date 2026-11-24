@@ -1,0 +1,19 @@
+{
+    "name": "Cretacea.Rendering",
+    "rootNamespace": "Cretacea.Rendering",
+    "references": [
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.HighDefinition.Runtime",
+        "Unity.VisualEffectGraph.Runtime",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,2185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae162a3f1e2c4a26b1a1abccc6a6c2c, type: 3}
+  m_Name: CretaceaSoundBank
+  m_EditorClassIdentifier: Cretacea.Audio::Cretacea.Audio.SoundBank
+  cues:
+  - cueId: foley_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 60504165e561d48a4adc303525b88b3a, type: 3}
+    - {fileID: 8300000, guid: 3cf813979317c4c85b9fbb7a3eaff481, type: 3}
+    - {fileID: 8300000, guid: 7c5e41427cdb54f6fbe12606256f78ec, type: 3}
+    - {fileID: 8300000, guid: 58cbf3e7d8989443ebb0b988ec6db5ff, type: 3}
+    - {fileID: 8300000, guid: c4ab3a4d9a6e24e41acb42cef40be9be, type: 3}
+    - {fileID: 8300000, guid: bbdf7fe39e1704d409fe5bce3bd0cf18, type: 3}
+  - cueId: foley_stand_up
+    bus: 1
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d394d6fcae6f440e7a60740e5ec3532b, type: 3}
+    - {fileID: 8300000, guid: 5af637a03d4d541488e6badc1e0a930c, type: 3}
+  - cueId: foley_grass_enter
+    bus: 1
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 16
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6603de75238bf4181a84253f720dac21, type: 3}
+    - {fileID: 8300000, guid: eed67e6176d9d4d85b791a79ed207bd2, type: 3}
+    - {fileID: 8300000, guid: b4794f754c26d4a1a87c93058b6c26ff, type: 3}
+    - {fileID: 8300000, guid: 2cd7b6a25151f41c0843ebaaad7a7c27, type: 3}
+    - {fileID: 8300000, guid: d70533eb733af4547a1c52a94fa6f0a6, type: 3}
+    - {fileID: 8300000, guid: c3b243d3f744a4b3981168af5df23ffa, type: 3}
+  - cueId: glass_crack_large
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 55
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6c65492cc148645dbabe92d1bf4725de, type: 3}
+    - {fileID: 8300000, guid: 2a89dc16fd1564c579f6fe7063ebeb5e, type: 3}
+  - cueId: bush_rustle_close
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 35
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a7c3cc2f5d2594c1faf0d9dbda021d45, type: 3}
+    - {fileID: 8300000, guid: 0af6efeb3384440e4b9f6cac966c2a5f, type: 3}
+    - {fileID: 8300000, guid: b28113a1cf4ca47d09f7422d2ebd5781, type: 3}
+    - {fileID: 8300000, guid: 54d7b77cfeb0c4344bdecb587ad1f43c, type: 3}
+    - {fileID: 8300000, guid: a7fe0a065c2154ce4aa21fcd3b00aa61, type: 3}
+    - {fileID: 8300000, guid: b165f8363abea4781bdbc9bf2f063e39, type: 3}
+  - cueId: crowd_gasp_cheer
+    bus: 0
+    spatial3D: 1
+    volume: 0.9
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 45
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 94ace61ea342c45f38c7e534f93e9edf, type: 3}
+    - {fileID: 8300000, guid: 980630a9af7834c29a2263a827bfb82b, type: 3}
+  - cueId: foley_step_concrete
+    bus: 1
+    spatial3D: 0
+    volume: 0.68
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5bbd1631163554681b505f55f28ce75f, type: 3}
+    - {fileID: 8300000, guid: b739acbcb1089475e98242de43b12b2d, type: 3}
+    - {fileID: 8300000, guid: a834d81f300834d6aa90ef416a8f1e77, type: 3}
+    - {fileID: 8300000, guid: cbe4b58d0355544998aaa6c5e0af7f96, type: 3}
+    - {fileID: 8300000, guid: c36aad3c6d49341de8c0d6fbc21c236f, type: 3}
+    - {fileID: 8300000, guid: 5b4c5435c4e93448eb1afc7ec1bc96f5, type: 3}
+    - {fileID: 8300000, guid: 74c8dde77271a46eb9af1b131b58c9d9, type: 3}
+    - {fileID: 8300000, guid: 943d728983091445ca746458a509bcf3, type: 3}
+  - cueId: foley_step_tile
+    bus: 1
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 7d6a28b5f38b5417f9e84b5a3d7b40be, type: 3}
+    - {fileID: 8300000, guid: 12cd7482a2a3e46808deae2063dadab4, type: 3}
+    - {fileID: 8300000, guid: 9606a3361f885450bb404cb78f269705, type: 3}
+    - {fileID: 8300000, guid: 03fdb966e12c447098e1cecf6ce6caed, type: 3}
+    - {fileID: 8300000, guid: 83822aed411874d848afbf74fdaf79be, type: 3}
+    - {fileID: 8300000, guid: 598e8313c0c9c4c5ab82f82a01c51b60, type: 3}
+  - cueId: foley_step_gravel
+    bus: 1
+    spatial3D: 0
+    volume: 0.74
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f44627c8fb3ca41679a74256169692ee, type: 3}
+    - {fileID: 8300000, guid: acc66ea86e1434274985bdbb5b8fd2e1, type: 3}
+    - {fileID: 8300000, guid: 965d6866f23124b92b5f49db2ad373b0, type: 3}
+    - {fileID: 8300000, guid: 59deaaf659e3140d584bd715122aa973, type: 3}
+    - {fileID: 8300000, guid: 4247f01c0af9d40e8907206218211c12, type: 3}
+    - {fileID: 8300000, guid: 87f2f60f3044e4e13bd97a690ae4596f, type: 3}
+  - cueId: foley_step_metal
+    bus: 1
+    spatial3D: 0
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4132a60387ff04df5820d943f302a247, type: 3}
+    - {fileID: 8300000, guid: db74250c99735413a80bdbf64b624062, type: 3}
+    - {fileID: 8300000, guid: d38b508cbd2c842929cd78759b03e3d1, type: 3}
+    - {fileID: 8300000, guid: 2c9014ca7a30d4059929edc9714b18cc, type: 3}
+    - {fileID: 8300000, guid: fa31779b58f1a4971b8f5920cbb2fc69, type: 3}
+    - {fileID: 8300000, guid: 0d19b1265914a454c89cc253f5e69bcd, type: 3}
+  - cueId: foley_step_mud
+    bus: 1
+    spatial3D: 0
+    volume: 0.75
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 178ed8643b8934fd6a82d2ea40a6d6c5, type: 3}
+    - {fileID: 8300000, guid: cba8245973aee4f3aa97800f289b00e3, type: 3}
+    - {fileID: 8300000, guid: 47b33377c6bbb4fe389ee6d1d998a5ec, type: 3}
+    - {fileID: 8300000, guid: 0f9f8ddd807d84b55831d944e3b75cdf, type: 3}
+    - {fileID: 8300000, guid: 7c6958990587545579339c025498ef03, type: 3}
+    - {fileID: 8300000, guid: ab55f8a90764a4880b83e5bacd849600, type: 3}
+  - cueId: foley_step_grass
+    bus: 1
+    spatial3D: 0
+    volume: 0.64
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6603de75238bf4181a84253f720dac21, type: 3}
+    - {fileID: 8300000, guid: eed67e6176d9d4d85b791a79ed207bd2, type: 3}
+    - {fileID: 8300000, guid: b4794f754c26d4a1a87c93058b6c26ff, type: 3}
+    - {fileID: 8300000, guid: 2cd7b6a25151f41c0843ebaaad7a7c27, type: 3}
+    - {fileID: 8300000, guid: d70533eb733af4547a1c52a94fa6f0a6, type: 3}
+    - {fileID: 8300000, guid: c3b243d3f744a4b3981168af5df23ffa, type: 3}
+  - cueId: foley_step_water
+    bus: 1
+    spatial3D: 0
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a2148226648404caf9339a0f0a3f14cf, type: 3}
+    - {fileID: 8300000, guid: 89c84d716c9064b5581208943c088e6c, type: 3}
+    - {fileID: 8300000, guid: 33ff7a13e60fb450e9e6096b37ce86f8, type: 3}
+    - {fileID: 8300000, guid: 9e2e5a23e576442229d6457c3230b176, type: 3}
+    - {fileID: 8300000, guid: 6cfd6fba3508846ba941ee200d098128, type: 3}
+    - {fileID: 8300000, guid: 9c37a8372a0f2407698b8e9edb02597b, type: 3}
+  - cueId: foley_pickup
+    bus: 1
+    spatial3D: 0
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d394d6fcae6f440e7a60740e5ec3532b, type: 3}
+    - {fileID: 8300000, guid: 5af637a03d4d541488e6badc1e0a930c, type: 3}
+  - cueId: foley_paper_rustle
+    bus: 1
+    spatial3D: 0
+    volume: 0.78
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: ead10eabd5ff540a196c4c7be0182db0, type: 3}
+    - {fileID: 8300000, guid: e25aac657d5454c30821caf59c35b05a, type: 3}
+    - {fileID: 8300000, guid: 63f90b10bf46d48a7949900cd5789986, type: 3}
+    - {fileID: 8300000, guid: 7ba3de0aa00eb467f931b82d44af9716, type: 3}
+    - {fileID: 8300000, guid: 8de06fedb99284e7b9e0d7e7697aee83, type: 3}
+  - cueId: foley_breath_exhausted
+    bus: 1
+    spatial3D: 0
+    volume: 0.75
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 01453554368514b629d5a821c61710be, type: 3}
+    - {fileID: 8300000, guid: d97e0b1f5ea2b43db89889b41048ac09, type: 3}
+    - {fileID: 8300000, guid: 3bb57bba57c57452a8d88d0c2ffc05b6, type: 3}
+  - cueId: flashlight_click_on
+    bus: 1
+    spatial3D: 0
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 47e1f80fe150c4ecf924485c5ee56e37, type: 3}
+    - {fileID: 8300000, guid: cc20dbaeb59364ecebccf0b816b4e89e, type: 3}
+    - {fileID: 8300000, guid: 873ecc565d0e24278b62a2170e7d3024, type: 3}
+    - {fileID: 8300000, guid: e9e8a5554d1c34b3792dff33ec0a1576, type: 3}
+  - cueId: flashlight_click_off
+    bus: 1
+    spatial3D: 0
+    volume: 0.78
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 47e1f80fe150c4ecf924485c5ee56e37, type: 3}
+    - {fileID: 8300000, guid: cc20dbaeb59364ecebccf0b816b4e89e, type: 3}
+    - {fileID: 8300000, guid: 873ecc565d0e24278b62a2170e7d3024, type: 3}
+    - {fileID: 8300000, guid: e9e8a5554d1c34b3792dff33ec0a1576, type: 3}
+  - cueId: amb_park_day_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.65
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f67401c1c44b640b5b8652161e66f23e, type: 3}
+  - cueId: amb_jungle_day_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.65
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 643b422c365264f79a1a83c6749000be, type: 3}
+  - cueId: amb_jungle_night_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.6
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 38bbe532070bc41aca16edcde4d4ed82, type: 3}
+  - cueId: amb_rain_exterior_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: fa00c5a63590f48d89a77736d90b1f14, type: 3}
+  - cueId: amb_rain_menu_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.68
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: dddc801e075374a8a8d3c28ef9d20c83, type: 3}
+  - cueId: amb_wind_open_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.62
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f878397e5bdb14756846d0f9ea14326b, type: 3}
+  - cueId: amb_coast_dawn_loop
+    bus: 4
+    spatial3D: 0
+    volume: 0.75
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 3b6814227946943f0a3c7ed17a930557, type: 3}
+  - cueId: amb_rain_on_roof_loop
+    bus: 3
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 07d7ac62605f944fa9c556b32f2341bd, type: 3}
+  - cueId: amb_interior_hum_loop
+    bus: 3
+    spatial3D: 0
+    volume: 0.42
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 2194f6b5742c44b07b4fd890689cb8c2, type: 3}
+  - cueId: amb_building_creak_loop
+    bus: 3
+    spatial3D: 0
+    volume: 0.55
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f74c1af11f97f406384d2f85f8d884de, type: 3}
+  - cueId: amb_metal_creak_loop
+    bus: 3
+    spatial3D: 0
+    volume: 0.58
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: dadd0b705a99f49b59bbd4ec782d5f2d, type: 3}
+  - cueId: amb_alarm_distant_loop
+    bus: 3
+    spatial3D: 0
+    volume: 0.4
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5c28d4711cd9843efa013df9e2c27d23, type: 3}
+  - cueId: amb_thunder_close
+    bus: 0
+    spatial3D: 0
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 46cb2bc8d2d2041fbaa3c812883ec29c, type: 3}
+    - {fileID: 8300000, guid: 2b8b1cfdc9ea8485eb2dc887bc65bdb9, type: 3}
+    - {fileID: 8300000, guid: 2ef753b7b1f7f49ad96c229ccf028693, type: 3}
+  - cueId: amb_thunder_far
+    bus: 0
+    spatial3D: 0
+    volume: 0.65
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d4c758f9109604720a5555211aa39cd6, type: 3}
+    - {fileID: 8300000, guid: b013cf3b9d09b4dd2b0bae99962b6712, type: 3}
+    - {fileID: 8300000, guid: a9328b6b2e4cc4062a51071dc3ee752e, type: 3}
+  - cueId: trex_step
+    bus: 2
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 8
+    maxDistance: 140
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: e7b327300181e40a2985f136cde919cd, type: 3}
+    - {fileID: 8300000, guid: 4fdd6424c51ad4f27bba1b2b161f68b0, type: 3}
+    - {fileID: 8300000, guid: 16eecbd296d5a4993957107879091fcf, type: 3}
+    - {fileID: 8300000, guid: 0c4ff9f2f5e4b4981b13213e6b781e45, type: 3}
+    - {fileID: 8300000, guid: f20c1ec96d1d4447d8e99e6f661d7257, type: 3}
+    - {fileID: 8300000, guid: a5329017e44a64c5d8b8dcf50d74e215, type: 3}
+  - cueId: trex_roar_close
+    bus: 2
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 12
+    maxDistance: 220
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 7c95665e3f9f94130bf74c08e6807885, type: 3}
+    - {fileID: 8300000, guid: 792f0fef6784d420bb7b0a8f994614b5, type: 3}
+    - {fileID: 8300000, guid: 7159afe27c90c4dc69e3b46d1847f4d9, type: 3}
+  - cueId: trex_roar_mid
+    bus: 2
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 14
+    maxDistance: 240
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 669d1771e11954eb48a42c884b6c399a, type: 3}
+    - {fileID: 8300000, guid: 48c9c94fccaf04eb88c85446c131b4e7, type: 3}
+  - cueId: trex_roar_far
+    bus: 2
+    spatial3D: 1
+    volume: 0.9
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 20
+    maxDistance: 380
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5e4b8d1b8128f499da57e2878cf78670, type: 3}
+    - {fileID: 8300000, guid: f28c7b439f7fb41158c2d15d0f5248a8, type: 3}
+    - {fileID: 8300000, guid: 83b6baa06cceb414397a67c1f8e6db1a, type: 3}
+  - cueId: trex_snort
+    bus: 2
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 6
+    maxDistance: 80
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4017823d9199c48eea93581a48487baf, type: 3}
+    - {fileID: 8300000, guid: a44963c32670b494a9ff3d9a09513dfe, type: 3}
+    - {fileID: 8300000, guid: 0786fb5914ff341a38a0dc1dbb12d685, type: 3}
+  - cueId: trex_bite
+    bus: 2
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 4
+    maxDistance: 65
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 44017745e4ae142759914fa514f38702, type: 3}
+    - {fileID: 8300000, guid: 22b587ad3cdf74818a9c43d594ed0863, type: 3}
+    - {fileID: 8300000, guid: f54b1f027429d48a7a36e356860784fb, type: 3}
+    - {fileID: 8300000, guid: 8a6d26b47b6f148919df60f1544f8b8c, type: 3}
+  - cueId: raptor_step
+    bus: 2
+    spatial3D: 1
+    volume: 0.78
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 32
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 95c47273b176d4888b30864c615b3e65, type: 3}
+    - {fileID: 8300000, guid: b2116d7b8a4d54c128e726c3f60b7689, type: 3}
+    - {fileID: 8300000, guid: 872d02bc18a9b4ff88892b34b518eda4, type: 3}
+    - {fileID: 8300000, guid: 72306b7086a0b4a9f8e4bf72ce3f8807, type: 3}
+    - {fileID: 8300000, guid: 4e705839486194719a2daf814292e459, type: 3}
+    - {fileID: 8300000, guid: 4ee58286e35b644a0aeddebfba8508a6, type: 3}
+    - {fileID: 8300000, guid: abab167591f884b8e9b3e10a72c5036d, type: 3}
+    - {fileID: 8300000, guid: 296628e1a0cff4f909dbf05e61c940d4, type: 3}
+  - cueId: raptor_screech
+    bus: 2
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 4
+    maxDistance: 75
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 381fe4263f216403c919ca97250ae797, type: 3}
+    - {fileID: 8300000, guid: 6a983f9c98b854271804071d72cc7cb5, type: 3}
+    - {fileID: 8300000, guid: 332ec554cd5334babb39543214b0cfde, type: 3}
+  - cueId: raptor_chirp
+    bus: 2
+    spatial3D: 1
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 3
+    maxDistance: 48
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 259e2a658b95d4b209c82f32f1cbeeda, type: 3}
+    - {fileID: 8300000, guid: d936fbbea6ad9484fb749ddd27d9476b, type: 3}
+  - cueId: raptor_sniff
+    bus: 2
+    spatial3D: 1
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 28
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 58486517d49274c1a81939ebe447b750, type: 3}
+    - {fileID: 8300000, guid: 02c7bf776ee8d4dfcb7da60bc146e2eb, type: 3}
+    - {fileID: 8300000, guid: 5bbdf038d5342495ebf12efd765b0735, type: 3}
+  - cueId: raptor_breath_close
+    bus: 2
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 22
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4a2cd67c9bed54635bd4a62996b3f517, type: 3}
+    - {fileID: 8300000, guid: a4d51eb23a27d4b879ccddff75259748, type: 3}
+  - cueId: raptor_attack
+    bus: 2
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 3
+    maxDistance: 45
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 1e7726c379cc34966b19bf2eb8e4b4a0, type: 3}
+    - {fileID: 8300000, guid: 7f3d5989ac6c941b6a3d9168aeac240b, type: 3}
+    - {fileID: 8300000, guid: b77cff23ba817452b95c9461b6458d11, type: 3}
+    - {fileID: 8300000, guid: 16f317bbd9a834959bf2daa0e11e51e1, type: 3}
+    - {fileID: 8300000, guid: 50e0dabc97f8e44aba0e70d23e65361f, type: 3}
+    - {fileID: 8300000, guid: 2369305f62a6845bb8aba7e482974daa, type: 3}
+  - cueId: raptor_call_distant
+    bus: 2
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 12
+    maxDistance: 150
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 32c1c6357eaaf4db38cf9b910fa1d030, type: 3}
+    - {fileID: 8300000, guid: 03b1a77f76b1f4b53aba1bb3be419f85, type: 3}
+    - {fileID: 8300000, guid: 166d3daece94741efa8e13b9c8dae8f8, type: 3}
+  - cueId: sauropod_call_far
+    bus: 2
+    spatial3D: 1
+    volume: 0.9
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 20
+    maxDistance: 260
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 3ad3b1895cb8e4fe9bd69406eadc46b6, type: 3}
+    - {fileID: 8300000, guid: 74459c78a831f435abb26e5206a85335, type: 3}
+  - cueId: door_interior_open
+    bus: 0
+    spatial3D: 1
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 24
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 1cf09a300cfed4a5e9e9d8f134e87c3c, type: 3}
+    - {fileID: 8300000, guid: 4ae6693c8c88345afb26b9679f0685c1, type: 3}
+    - {fileID: 8300000, guid: 720e8eebe596d497dbd9fe7657b1ddc9, type: 3}
+  - cueId: door_interior_close
+    bus: 0
+    spatial3D: 1
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 24
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a09f890aadc9c4e1489c386aa4611398, type: 3}
+  - cueId: door_old_open
+    bus: 0
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 28
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: c33ba5aea55fb44f8bfaa3efe496e961, type: 3}
+    - {fileID: 8300000, guid: f95049676a88b4a508c1d84fa4ab5d2e, type: 3}
+    - {fileID: 8300000, guid: e267f5115245c40e99803619a0fefa5c, type: 3}
+  - cueId: door_old_close
+    bus: 0
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 28
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: fd2213625ee084934a49eefbefd6aa19, type: 3}
+  - cueId: door_metal_open
+    bus: 0
+    spatial3D: 1
+    volume: 0.88
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 32
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f1c2678c092034471a8de0abd301ea4d, type: 3}
+    - {fileID: 8300000, guid: 91b04acebb19f449fa99a0483f8a4d32, type: 3}
+    - {fileID: 8300000, guid: 3050c7f7f96ce4f39afddbc572f113d6, type: 3}
+  - cueId: door_metal_close
+    bus: 0
+    spatial3D: 1
+    volume: 0.88
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 32
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: dd7af156ca2e24faab429760ecb211e6, type: 3}
+  - cueId: door_locked_rattle
+    bus: 0
+    spatial3D: 1
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 20
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: c55659df1645047cfb5d34cd2749ceff, type: 3}
+    - {fileID: 8300000, guid: 624a785d59ad84579ada4b63db03adb1, type: 3}
+    - {fileID: 8300000, guid: 7f9a795427c2b4589805e05c6d410d8e, type: 3}
+  - cueId: door_bash_hit
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 45
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f4e871d5193cb463ca6393d7e6f53293, type: 3}
+    - {fileID: 8300000, guid: 9f531681efceb4c029a2573787f36b60, type: 3}
+    - {fileID: 8300000, guid: a92e04462394a4390a3af78d8b5863d1, type: 3}
+    - {fileID: 8300000, guid: 7f8bed4246df5401483a903d7e3cd0c0, type: 3}
+    - {fileID: 8300000, guid: ae84f1758b17645b38688fa57d39a665, type: 3}
+    - {fileID: 8300000, guid: 4ecebf1b1fa6c48de8cb29366061bfd3, type: 3}
+  - cueId: door_bash_metal
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 45
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 3979c5cacae9545d9b3285a057c63e71, type: 3}
+    - {fileID: 8300000, guid: 7e2da7f373d6b48cf8fa4b04dd2973dc, type: 3}
+    - {fileID: 8300000, guid: 63712976300354c0d82720299c586b3b, type: 3}
+  - cueId: door_break_open
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 55
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 44ec643ac327a4b9fab3b3e05f2f2fbc, type: 3}
+    - {fileID: 8300000, guid: 60392efd23eec4ca39c007171e1c8fda, type: 3}
+    - {fileID: 8300000, guid: 4948859d8fe144f4fbbb630cdf7260e1, type: 3}
+    - {fileID: 8300000, guid: c95800160f98e4124adcb1ac313c92fd, type: 3}
+    - {fileID: 8300000, guid: c3e9133dab4214c84994c920a912a903, type: 3}
+    - {fileID: 8300000, guid: a99742e87a1644601aacdb1eca56e269, type: 3}
+    - {fileID: 8300000, guid: 7b3e8510991844c7398cf47fc0ffacf6, type: 3}
+    - {fileID: 8300000, guid: 6e02b2636621749bb95ea935fc59f8fd, type: 3}
+  - cueId: gate_heavy_slide
+    bus: 0
+    spatial3D: 1
+    volume: 0.98
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 85
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 03178069900de4e3eb85bf7634a9a85d, type: 3}
+  - cueId: gate_motor_grind
+    bus: 0
+    spatial3D: 1
+    volume: 0.92
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 65
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 419a19be3d03d49538ae27a12ce58ac1, type: 3}
+    - {fileID: 8300000, guid: 3642b29c105ff49e7867f60e491e985f, type: 3}
+    - {fileID: 8300000, guid: a687360b3d54140849008a5217790fc2, type: 3}
+    - {fileID: 8300000, guid: dd77dc343e6ec4e20b6bf0ef3cb3bf22, type: 3}
+  - cueId: gate_open_clunk
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 65
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a45ab7707cf4f4b8c87a78d097ad3432, type: 3}
+    - {fileID: 8300000, guid: 1f0ba6be2338e403aae16042729b0b44, type: 3}
+  - cueId: gate_close_slam
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 70
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 8db75b53df0aa4343911f28d2541e354, type: 3}
+    - {fileID: 8300000, guid: 6d0a3e51b7c8244b98d95b045c85d7e3, type: 3}
+  - cueId: chainlink_impact
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 50
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 80d7730bf032a4cf1a0f17fb474ae60e, type: 3}
+    - {fileID: 8300000, guid: 80f6f053f458e4561b1cbf0b778febb7, type: 3}
+    - {fileID: 8300000, guid: 0a9439941581442ce86599cc12d1d35a, type: 3}
+  - cueId: fence_smash
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 120
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: c1ed2042b4d474f9582c1ba1b1f6cf00, type: 3}
+  - cueId: wall_impact_heavy
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 90
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d63aef2eb468847afa5436bf9bc6bd42, type: 3}
+    - {fileID: 8300000, guid: 58111f19ecfc6441090d00228db7d278, type: 3}
+    - {fileID: 8300000, guid: 68113f0e61d83438a8868d1b9bba203a, type: 3}
+  - cueId: breaker_reset_clunk
+    bus: 0
+    spatial3D: 1
+    volume: 0.9
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 55
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 1a785f24b77e44006a0dda614194c7a6, type: 3}
+    - {fileID: 8300000, guid: 357b7c1c6a78a44fc8c40ab4ad394078, type: 3}
+    - {fileID: 8300000, guid: 5728b7c94e69f4e02945920ae62718d4, type: 3}
+  - cueId: fuel_pump_stroke
+    bus: 0
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 35
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: b58a8d373bf084ab0acf89e3cb5d334e, type: 3}
+    - {fileID: 8300000, guid: 46105927f257742ac8b2189b5c19e3e0, type: 3}
+    - {fileID: 8300000, guid: e2d8efcdf53024aab87bfb0e4cbbffcd, type: 3}
+    - {fileID: 8300000, guid: 24ace4292bdd2437093fdabc31412c6c, type: 3}
+  - cueId: fuel_pump_primed
+    bus: 0
+    spatial3D: 1
+    volume: 0.9
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 40
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 3610eacff518644b4acff22d48ba0c35, type: 3}
+  - cueId: gen_start_fail
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 90
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f06161eb1eca74de4ac76a76f12cb35f, type: 3}
+    - {fileID: 8300000, guid: 0878fec857db24d3b81208c2817a839e, type: 3}
+  - cueId: gen_start_success
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 130
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 34b6c5f8c29864af180cd67ed81c498e, type: 3}
+  - cueId: gen_engine_loop
+    bus: 0
+    spatial3D: 1
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 5
+    maxDistance: 110
+    loop: 1
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 99d7fa7354e3a436a937fa1fc765d96c, type: 3}
+  - cueId: lever_transfer_clunk
+    bus: 0
+    spatial3D: 1
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 50
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d4cd02d98466341bfb70d1c7ba82c0ed, type: 3}
+  - cueId: power_restore_surge
+    bus: 0
+    spatial3D: 0
+    volume: 0.95
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: bee1630d082c54afab41d393da4518ca, type: 3}
+    - {fileID: 8300000, guid: 295f3b97bc8e345a5b861c142b13fb70, type: 3}
+    - {fileID: 8300000, guid: ad41dd265850d42a488af80f23e923f2, type: 3}
+  - cueId: floodlights_on
+    bus: 0
+    spatial3D: 1
+    volume: 0.92
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 80
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6432f0ac0f66049caa6bb1924b97fb14, type: 3}
+    - {fileID: 8300000, guid: 7c726d25018f749b7a2c97c5eb81a7ce, type: 3}
+    - {fileID: 8300000, guid: 8e5ac3fb5093743f2828ac3c433b2d74, type: 3}
+  - cueId: power_transformer_explosion
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 30
+    maxDistance: 400
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a49d59ed92136479d9354c33362316d2, type: 3}
+    - {fileID: 8300000, guid: c06a9913f1d1740f4a05192284867642, type: 3}
+    - {fileID: 8300000, guid: 5b707c6c8efb140f2b6e1c4770df30d3, type: 3}
+  - cueId: power_failure_wind_down
+    bus: 0
+    spatial3D: 0
+    volume: 0.92
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a0bde519e046a4f54bb200f53b24a860, type: 3}
+    - {fileID: 8300000, guid: 8604af949687c46fb8fd0f924f1abd98, type: 3}
+    - {fileID: 8300000, guid: 20b7788cee9c84191b14f58fcf506585, type: 3}
+  - cueId: power_emergency_on
+    bus: 0
+    spatial3D: 0
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: e927b654a3b614b8e948f89f22cd4f10, type: 3}
+    - {fileID: 8300000, guid: 8852739b098154bccb75c248c95f786b, type: 3}
+  - cueId: structure_groan
+    bus: 0
+    spatial3D: 1
+    volume: 0.92
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 45
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 2b84bb9818a9145309295b8d3379c9a1, type: 3}
+    - {fileID: 8300000, guid: 77710285c9825491aac89b10468d8296, type: 3}
+  - cueId: ceiling_collapse
+    bus: 0
+    spatial3D: 1
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 65
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6c65492cc148645dbabe92d1bf4725de, type: 3}
+    - {fileID: 8300000, guid: 2a89dc16fd1564c579f6fe7063ebeb5e, type: 3}
+  - cueId: electric_spark
+    bus: 0
+    spatial3D: 1
+    volume: 0.72
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 28
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 293a2d0fbbd874a7598dbe2627d74d68, type: 3}
+    - {fileID: 8300000, guid: 80de6ec4386ad45149e249da60f1fe9b, type: 3}
+    - {fileID: 8300000, guid: c80c7bc581f5e450085eefb675ab0e15, type: 3}
+    - {fileID: 8300000, guid: 83548eebdf72b4e298b0f10ae28896f7, type: 3}
+  - cueId: pa_chime
+    bus: 7
+    spatial3D: 0
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 94ace61ea342c45f38c7e534f93e9edf, type: 3}
+    - {fileID: 8300000, guid: 980630a9af7834c29a2263a827bfb82b, type: 3}
+  - cueId: pa_alarm_short
+    bus: 7
+    spatial3D: 0
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 93ac0390fe14f49c88cdd8336c1e33ea, type: 3}
+    - {fileID: 8300000, guid: 58eb7c32fb834480fbf8b1636067508d, type: 3}
+  - cueId: radio_static_burst
+    bus: 6
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 2c412670f781e462d898a631c9204bbc, type: 3}
+    - {fileID: 8300000, guid: 3378732ba39c24818a6389c3ffaec8da, type: 3}
+    - {fileID: 8300000, guid: b3a7d8312292e41ef8f0eb16a126f177, type: 3}
+    - {fileID: 8300000, guid: ee9d0d3a5ff00486bb57c6a48b1de7a1, type: 3}
+  - cueId: radio_ranger_log
+    bus: 6
+    spatial3D: 1
+    volume: 0.85
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 24
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d81db4f67ea6f409889dc0cd6932be33, type: 3}
+  - cueId: radio_dies
+    bus: 6
+    spatial3D: 0
+    volume: 0.85
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: b903b04a9815047a4bba2bebe5c63d40, type: 3}
+  - cueId: ui_terminal_beep
+    bus: 7
+    spatial3D: 0
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: bb63f004f829d42e1a1eae3e9d55e268, type: 3}
+  - cueId: ui_denied
+    bus: 7
+    spatial3D: 0
+    volume: 0.78
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 164a24dcb879744fdb3df4aff73c3219, type: 3}
+  - cueId: ui_hover
+    bus: 7
+    spatial3D: 0
+    volume: 0.55
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 405cd5b6e4fb341bfa350d0c0aeaff74, type: 3}
+    - {fileID: 8300000, guid: 2ec51f57d8fdb40938ae02645552c89f, type: 3}
+    - {fileID: 8300000, guid: cbb932998e13a404fb55e566fca6e7b4, type: 3}
+  - cueId: ui_click
+    bus: 7
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 14fe412ac7ba14980bc3f4d5df98a9e5, type: 3}
+  - cueId: vo_dana_01
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 453da6dc2a89e402abcf0e297bfdd3bc, type: 3}
+  - cueId: vo_dana_02
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 1926cd245884e48b5a9aeecd5e243c04, type: 3}
+  - cueId: vo_dana_03
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 9c65b17787d8d4bd1930e79b8d5ad310, type: 3}
+  - cueId: vo_dana_04
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 09d52ae0738a946b6968817c044d24f3, type: 3}
+  - cueId: vo_dana_05
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: cdee9e4974cc846559e5a855a2b23081, type: 3}
+  - cueId: vo_dana_06
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4c12472178e67431f87f007d7097e03d, type: 3}
+  - cueId: vo_dana_07
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 85bf0e76d698b4cba9707e069c4ed460, type: 3}
+  - cueId: vo_pa_01
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6c8dedf5919094363b6c0265d72bd578, type: 3}
+  - cueId: vo_pa_02
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 76d255c06911c4199b574a42d933a7a3, type: 3}
+  - cueId: vo_pa_03
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 31008a4d775aa45d88280c26f39e8747, type: 3}
+  - cueId: vo_vance_01
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 0cf05d06cc85544e181629efe3c14ac9, type: 3}
+  - cueId: vo_vance_02
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: b67ce2d77da6c4e6b8a8b2102b0b4c3c, type: 3}
+  - cueId: vo_vance_03
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 27ab7afceb1654ec19dfc41a557e8f04, type: 3}
+  - cueId: vo_vance_04
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 388b4cdc184f04e23ae98e25aa0795dd, type: 3}
+  - cueId: vo_vance_05
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f915d609638e343ce892a2b00c6f8b80, type: 3}
+  - cueId: vo_ranger_01
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 97ce639b28bd04f0bb57ec0acc99509c, type: 3}
+  - cueId: vo_ranger_02
+    bus: 6
+    spatial3D: 0
+    volume: 1
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4990b8355d5f24698a06a9b6003a9054, type: 3}
+  - cueId: mus_calm_day_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 9e92d2b069eca4ff8996dc37c0b3e195, type: 3}
+  - cueId: mus_calm_day_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: fc8c70213e5ee4e2c8b151b76150a7d7, type: 3}
+  - cueId: mus_menu_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 9aad1a6cd193b4f999cd6e26f8d5f3a1, type: 3}
+  - cueId: mus_menu_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6f8f96b14dbc94362b1ca164137e55f6, type: 3}
+  - cueId: mus_night_unease_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5f9f55da9a0984b7d9113fda12652d7c, type: 3}
+  - cueId: mus_night_unease_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5ff9ce672fa2142bb8e5cde6290172b7, type: 3}
+  - cueId: mus_tension_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 7e7d8597a32b345afbbe4b211bf754e9, type: 3}
+  - cueId: mus_tension_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: d319e9b3be758482b80cf577a38e57bc, type: 3}
+  - cueId: mus_chase_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 357750ae7d5434a5e8461918bbcc9d97, type: 3}
+  - cueId: mus_chase_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 774beb986bdb5405f9461b4080022a03, type: 3}
+  - cueId: mus_ending_01
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: e2455de30c5ab4c11b970a7e63b2abab, type: 3}
+  - cueId: mus_ending_02
+    bus: 5
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 1
+    pitchMax: 1
+    minDistance: 2
+    maxDistance: 42
+    loop: 1
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 9f24090c985584da98ce61e710857b18, type: 3}
+  - cueId: foley_step_concrete_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.442
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: aae4f27b794f04458a4f15410dd80e87, type: 3}
+    - {fileID: 8300000, guid: 25122720947494e1588d86c265802819, type: 3}
+    - {fileID: 8300000, guid: a23b38d09675f41aea24739cd08d6ce0, type: 3}
+    - {fileID: 8300000, guid: a1d57a3c627d0448a85e5873d80fd666, type: 3}
+    - {fileID: 8300000, guid: 56c2950598f2f4423800bae6cef8d2e0, type: 3}
+    - {fileID: 8300000, guid: 61bbe7a77b5d340cd9437c694a3d1a7d, type: 3}
+  - cueId: foley_step_concrete_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.68
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 5bbd1631163554681b505f55f28ce75f, type: 3}
+    - {fileID: 8300000, guid: b739acbcb1089475e98242de43b12b2d, type: 3}
+    - {fileID: 8300000, guid: a834d81f300834d6aa90ef416a8f1e77, type: 3}
+    - {fileID: 8300000, guid: cbe4b58d0355544998aaa6c5e0af7f96, type: 3}
+    - {fileID: 8300000, guid: c36aad3c6d49341de8c0d6fbc21c236f, type: 3}
+    - {fileID: 8300000, guid: 5b4c5435c4e93448eb1afc7ec1bc96f5, type: 3}
+    - {fileID: 8300000, guid: 74c8dde77271a46eb9af1b131b58c9d9, type: 3}
+    - {fileID: 8300000, guid: 943d728983091445ca746458a509bcf3, type: 3}
+  - cueId: foley_step_concrete_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.782
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 287e545e5504c4bbfaa4c3c757bc2e53, type: 3}
+    - {fileID: 8300000, guid: c3e926df90dbc4c81a6079c2e62e187c, type: 3}
+    - {fileID: 8300000, guid: f915b7cfdfce249e8854a4bd2ca21e4f, type: 3}
+    - {fileID: 8300000, guid: 7e8daba246ffe40e595c92bebc17a430, type: 3}
+    - {fileID: 8300000, guid: fbd4532ff9e9346cb8bc87425779f5a1, type: 3}
+    - {fileID: 8300000, guid: bbb72f2557f7641fb96badb7d3c6b12e, type: 3}
+    - {fileID: 8300000, guid: 665221e2842b94f85a182bcf9cc98fe4, type: 3}
+    - {fileID: 8300000, guid: d6810b86c1f4a4ef69ada41a82a280ab, type: 3}
+  - cueId: foley_step_tile_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.45499998
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 1318c2cadb846435bbae11451b4638f0, type: 3}
+    - {fileID: 8300000, guid: e99481ffb7a664985a6029b46943629f, type: 3}
+    - {fileID: 8300000, guid: d5a02241d369a47579fcaff1ef8cbceb, type: 3}
+    - {fileID: 8300000, guid: a56ef63d6b66041798b6e4b09aeb7c59, type: 3}
+    - {fileID: 8300000, guid: 75424c25176bb445180248ec49403fb4, type: 3}
+    - {fileID: 8300000, guid: 0cce7c69dbac04fe8809a59895ff5a1b, type: 3}
+  - cueId: foley_step_tile_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 7d6a28b5f38b5417f9e84b5a3d7b40be, type: 3}
+    - {fileID: 8300000, guid: 12cd7482a2a3e46808deae2063dadab4, type: 3}
+    - {fileID: 8300000, guid: 9606a3361f885450bb404cb78f269705, type: 3}
+    - {fileID: 8300000, guid: 03fdb966e12c447098e1cecf6ce6caed, type: 3}
+    - {fileID: 8300000, guid: 83822aed411874d848afbf74fdaf79be, type: 3}
+    - {fileID: 8300000, guid: 598e8313c0c9c4c5ab82f82a01c51b60, type: 3}
+  - cueId: foley_step_tile_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.80499995
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 07fc39d2c94644d99a21e08a7385a292, type: 3}
+    - {fileID: 8300000, guid: 8c0404c05de78431d89b8b34ee055d71, type: 3}
+    - {fileID: 8300000, guid: c337c68c3bdb24eedaa2ce8190980e63, type: 3}
+    - {fileID: 8300000, guid: 8ce84e77a541c4698ae8395f66072ba0, type: 3}
+    - {fileID: 8300000, guid: 59cfae7ba6ded48b8a9ec63a232bdabb, type: 3}
+    - {fileID: 8300000, guid: 86ad0a60491014e6b83c445e4d75e390, type: 3}
+  - cueId: foley_step_gravel_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.48099998
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f2de83be0719143e48a93e3b6039ba00, type: 3}
+    - {fileID: 8300000, guid: 6b7f5a48a40a84db3a1a3026e38f697f, type: 3}
+    - {fileID: 8300000, guid: 5b40a4d29bbba427d986a9720539cb27, type: 3}
+    - {fileID: 8300000, guid: 93ec540e30bbd47d898dcd8f4d2e3ca7, type: 3}
+    - {fileID: 8300000, guid: 306e2da1ad1aa48f8bb5e872898967ab, type: 3}
+    - {fileID: 8300000, guid: 06ad2054b75ce453ca5b99b4f44c2f53, type: 3}
+  - cueId: foley_step_gravel_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.74
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: f44627c8fb3ca41679a74256169692ee, type: 3}
+    - {fileID: 8300000, guid: acc66ea86e1434274985bdbb5b8fd2e1, type: 3}
+    - {fileID: 8300000, guid: 965d6866f23124b92b5f49db2ad373b0, type: 3}
+    - {fileID: 8300000, guid: 59deaaf659e3140d584bd715122aa973, type: 3}
+    - {fileID: 8300000, guid: 4247f01c0af9d40e8907206218211c12, type: 3}
+    - {fileID: 8300000, guid: 87f2f60f3044e4e13bd97a690ae4596f, type: 3}
+  - cueId: foley_step_gravel_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.851
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 9de660d2508bd45b587b53bf9ef8c1b5, type: 3}
+    - {fileID: 8300000, guid: 272e03cee0f614a0e99673aaf2f673aa, type: 3}
+    - {fileID: 8300000, guid: 2898200da583b4ea6afb0e88f9a66d9f, type: 3}
+    - {fileID: 8300000, guid: a9cde760a087f43369564c66091e7b4c, type: 3}
+    - {fileID: 8300000, guid: 0f53f7581cfb44cbcbe82061e64ad25f, type: 3}
+    - {fileID: 8300000, guid: 46c110299c2c145cbae22c8b146194f3, type: 3}
+    - {fileID: 8300000, guid: e1905670c2a3e4761aa5fb5bb97cf802, type: 3}
+    - {fileID: 8300000, guid: 0af313b7268484446a1e4540de2553c1, type: 3}
+  - cueId: foley_step_metal_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.533
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a45d3c9861d1b4b11be4ece7081fd6f8, type: 3}
+    - {fileID: 8300000, guid: ede4b0f2b1bfc49e5b86406bb366b711, type: 3}
+    - {fileID: 8300000, guid: 644f6d5b17bb04ca2930945ae5dc9561, type: 3}
+    - {fileID: 8300000, guid: d9b90441472df43e9be17218f66b89ef, type: 3}
+    - {fileID: 8300000, guid: ba8f0a5315a8a428d9b9b0b4da05dbb0, type: 3}
+    - {fileID: 8300000, guid: 8bd21e278f84348169daefe3e96890e7, type: 3}
+  - cueId: foley_step_metal_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 4132a60387ff04df5820d943f302a247, type: 3}
+    - {fileID: 8300000, guid: db74250c99735413a80bdbf64b624062, type: 3}
+    - {fileID: 8300000, guid: d38b508cbd2c842929cd78759b03e3d1, type: 3}
+    - {fileID: 8300000, guid: 2c9014ca7a30d4059929edc9714b18cc, type: 3}
+    - {fileID: 8300000, guid: fa31779b58f1a4971b8f5920cbb2fc69, type: 3}
+    - {fileID: 8300000, guid: 0d19b1265914a454c89cc253f5e69bcd, type: 3}
+  - cueId: foley_step_metal_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.94299996
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 845dabd7f4c89412b8b2302205f6b365, type: 3}
+    - {fileID: 8300000, guid: cf9a83d2c5d314a7b9ca99a3b9d0a5da, type: 3}
+    - {fileID: 8300000, guid: c2fc0c7341a7c4fb6905524d98c5ae26, type: 3}
+    - {fileID: 8300000, guid: 4289ced112ecc4072a83ee4796eac886, type: 3}
+    - {fileID: 8300000, guid: 03851922615504f79b525e8c22d3011e, type: 3}
+    - {fileID: 8300000, guid: 947ff1adc5fef46559a30491eec0e2c2, type: 3}
+  - cueId: foley_step_mud_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.48749998
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 2aa71bd6e963744729b358149c88f9cd, type: 3}
+    - {fileID: 8300000, guid: 624be8c7a79614a5b8c77d8eb7f11ab3, type: 3}
+    - {fileID: 8300000, guid: e5c58c2b993ba452dad9bac01d0309df, type: 3}
+    - {fileID: 8300000, guid: 7f5669abbc1de47c29f4365036a5814e, type: 3}
+    - {fileID: 8300000, guid: b41304f6ee5174da5bbfbeee8b05e027, type: 3}
+    - {fileID: 8300000, guid: 736a96171d9334ee7be236a85707daae, type: 3}
+  - cueId: foley_step_mud_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.75
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 178ed8643b8934fd6a82d2ea40a6d6c5, type: 3}
+    - {fileID: 8300000, guid: cba8245973aee4f3aa97800f289b00e3, type: 3}
+    - {fileID: 8300000, guid: 47b33377c6bbb4fe389ee6d1d998a5ec, type: 3}
+    - {fileID: 8300000, guid: 0f9f8ddd807d84b55831d944e3b75cdf, type: 3}
+    - {fileID: 8300000, guid: 7c6958990587545579339c025498ef03, type: 3}
+    - {fileID: 8300000, guid: ab55f8a90764a4880b83e5bacd849600, type: 3}
+  - cueId: foley_step_mud_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.86249995
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 795bc144edc3f4ffba61ed239b330e0a, type: 3}
+    - {fileID: 8300000, guid: af6309df711344e9ab983e85db2d1ff6, type: 3}
+    - {fileID: 8300000, guid: 172f21579b142494e87d334dff653a50, type: 3}
+    - {fileID: 8300000, guid: 9b4d08404a1544654abe17ea665429c7, type: 3}
+    - {fileID: 8300000, guid: 31c505c9452564be4b418c4959d4e909, type: 3}
+    - {fileID: 8300000, guid: 0c6fe915c83fa4e30b45c39f8ade9b84, type: 3}
+  - cueId: foley_step_grass_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.41599998
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 60504165e561d48a4adc303525b88b3a, type: 3}
+    - {fileID: 8300000, guid: 3cf813979317c4c85b9fbb7a3eaff481, type: 3}
+    - {fileID: 8300000, guid: 7c5e41427cdb54f6fbe12606256f78ec, type: 3}
+    - {fileID: 8300000, guid: 58cbf3e7d8989443ebb0b988ec6db5ff, type: 3}
+    - {fileID: 8300000, guid: c4ab3a4d9a6e24e41acb42cef40be9be, type: 3}
+    - {fileID: 8300000, guid: bbdf7fe39e1704d409fe5bce3bd0cf18, type: 3}
+  - cueId: foley_step_grass_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.64
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6603de75238bf4181a84253f720dac21, type: 3}
+    - {fileID: 8300000, guid: eed67e6176d9d4d85b791a79ed207bd2, type: 3}
+    - {fileID: 8300000, guid: b4794f754c26d4a1a87c93058b6c26ff, type: 3}
+    - {fileID: 8300000, guid: 2cd7b6a25151f41c0843ebaaad7a7c27, type: 3}
+    - {fileID: 8300000, guid: d70533eb733af4547a1c52a94fa6f0a6, type: 3}
+    - {fileID: 8300000, guid: c3b243d3f744a4b3981168af5df23ffa, type: 3}
+  - cueId: foley_step_grass_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.73599994
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a7c3cc2f5d2594c1faf0d9dbda021d45, type: 3}
+    - {fileID: 8300000, guid: 0af6efeb3384440e4b9f6cac966c2a5f, type: 3}
+    - {fileID: 8300000, guid: b28113a1cf4ca47d09f7422d2ebd5781, type: 3}
+    - {fileID: 8300000, guid: 54d7b77cfeb0c4344bdecb587ad1f43c, type: 3}
+    - {fileID: 8300000, guid: a7fe0a065c2154ce4aa21fcd3b00aa61, type: 3}
+    - {fileID: 8300000, guid: b165f8363abea4781bdbc9bf2f063e39, type: 3}
+  - cueId: foley_step_water_crouch
+    bus: 1
+    spatial3D: 0
+    volume: 0.52
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 6f992ab72157847b3ae0c3b7f0ffb5b9, type: 3}
+    - {fileID: 8300000, guid: 90ee3656c72994cd18cdfce00abbd3c4, type: 3}
+    - {fileID: 8300000, guid: 472e3885428164c24aa08e017233c649, type: 3}
+    - {fileID: 8300000, guid: 5eb436f20a54b4d60acb1d881d3f56f2, type: 3}
+    - {fileID: 8300000, guid: 5a5a2d743b857459685931ab3e4db5b7, type: 3}
+    - {fileID: 8300000, guid: 47673791feef045c5878f222a720afa9, type: 3}
+  - cueId: foley_step_water_walk
+    bus: 1
+    spatial3D: 0
+    volume: 0.8
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: a2148226648404caf9339a0f0a3f14cf, type: 3}
+    - {fileID: 8300000, guid: 89c84d716c9064b5581208943c088e6c, type: 3}
+    - {fileID: 8300000, guid: 33ff7a13e60fb450e9e6096b37ce86f8, type: 3}
+    - {fileID: 8300000, guid: 9e2e5a23e576442229d6457c3230b176, type: 3}
+    - {fileID: 8300000, guid: 6cfd6fba3508846ba941ee200d098128, type: 3}
+    - {fileID: 8300000, guid: 9c37a8372a0f2407698b8e9edb02597b, type: 3}
+  - cueId: foley_step_water_run
+    bus: 1
+    spatial3D: 0
+    volume: 0.92
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 0ed9bc6f37d48400ab6571fcf345ca89, type: 3}
+    - {fileID: 8300000, guid: e1dcce972e6ea4a91a6c449b106eb760, type: 3}
+    - {fileID: 8300000, guid: 746f2024748984b8f8026327122419da, type: 3}
+    - {fileID: 8300000, guid: 1696fb231e5b349059b4717405e019bf, type: 3}
+    - {fileID: 8300000, guid: 3d9e160e4b7444580862e838ba38befd, type: 3}
+    - {fileID: 8300000, guid: b954c99f9f6c94fffb57e12c9ad6ba93, type: 3}
+  - cueId: foley_land
+    bus: 1
+    spatial3D: 0
+    volume: 0.85
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 82d257b1dbf454c70bf41b105a52d566, type: 3}
+    - {fileID: 8300000, guid: bfffe1f4e5c6a43aeb1bf9d8a30105a5, type: 3}
+  - cueId: player_death_hit
+    bus: 1
+    spatial3D: 0
+    volume: 1
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 963e6291d6be04c9fb95a3a910bf15ec, type: 3}
+    - {fileID: 8300000, guid: 89878ebca26e14676bad0cced784c80a, type: 3}
+    - {fileID: 8300000, guid: dcc9eb75f9552490e9e24a0fec90a32f, type: 3}
+  - cueId: trex_sniff
+    bus: 2
+    spatial3D: 1
+    volume: 0.82
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 4
+    maxDistance: 65
+    loop: 0
+    applyWallOcclusion: 1
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: c60a54d29aaf44d4fa3c76cd6b316b64, type: 3}
+    - {fileID: 8300000, guid: 7e76470ab369d431d820cc56c7503150, type: 3}
+    - {fileID: 8300000, guid: bb1c963620b144322b3d11cc7a03aac8, type: 3}
+  - cueId: ui_back
+    bus: 7
+    spatial3D: 0
+    volume: 0.7
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: e2bc25bdc422e400f8ba08f120f41081, type: 3}
+  - cueId: ui_pause
+    bus: 7
+    spatial3D: 0
+    volume: 0.72
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: ae5d953f014ba4de0bedaf73ba194deb, type: 3}
+  - cueId: ui_objective
+    bus: 7
+    spatial3D: 0
+    volume: 0.76
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: b22c05527534644eb81a7edb9cdb0f62, type: 3}
+  - cueId: ui_document_open
+    bus: 7
+    spatial3D: 0
+    volume: 0.78
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: ead10eabd5ff540a196c4c7be0182db0, type: 3}
+    - {fileID: 8300000, guid: e25aac657d5454c30821caf59c35b05a, type: 3}
+    - {fileID: 8300000, guid: 63f90b10bf46d48a7949900cd5789986, type: 3}
+  - cueId: ui_document_close
+    bus: 7
+    spatial3D: 0
+    volume: 0.76
+    pitchMin: 0.94
+    pitchMax: 1.06
+    minDistance: 2
+    maxDistance: 42
+    loop: 0
+    applyWallOcclusion: 0
+    varcoOverrideClips: []
+    defaultClips:
+    - {fileID: 8300000, guid: 7ba3de0aa00eb467f931b82d44af9716, type: 3}
+    - {fileID: 8300000, guid: 8de06fedb99284e7b9e0d7e7697aee83, type: 3}

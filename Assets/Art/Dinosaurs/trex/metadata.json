@@ -1,0 +1,181 @@
+{
+  "species": "trex",
+  "scientific_name": "Tyrannosaurus",
+  "fbx": "Tyrannosaurus.fbx",
+  "textures_dir": "Textures",
+  "textures": {
+    "albedo": "Tyrannosaurus_Albedo.png",
+    "normal": "Tyrannosaurus_Normal.png",
+    "metallic": "Tyrannosaurus_Metallic.png",
+    "roughness": "Tyrannosaurus_Roughness.png",
+    "ao": "Tyrannosaurus_AO.png",
+    "hdrp_mask_map": "Tyrannosaurus_MaskMap.png"
+  },
+  "verts": 24756,
+  "tris": 49516,
+  "bone_count": 33,
+  "unity_dimensions_m": {
+    "width_x": 4.203,
+    "height_y": 5.523,
+    "length_z": 11.2
+  },
+  "key_bones": {
+    "root": "Root",
+    "pelvis": "Pelvis",
+    "spine": [
+      "Spine_01",
+      "Spine_02",
+      "Spine_03"
+    ],
+    "neck": [
+      "Neck_01",
+      "Neck_02"
+    ],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tail": [
+      "Tail_01",
+      "Tail_02",
+      "Tail_03",
+      "Tail_04",
+      "Tail_05",
+      "Tail_06"
+    ],
+    "left_foot": "LeftFoot",
+    "right_foot": "RightFoot",
+    "left_leg_chain": [
+      "Thigh_L",
+      "Shin_L",
+      "Metatarsus_L",
+      "LeftFoot",
+      "Toe_L"
+    ],
+    "right_leg_chain": [
+      "Thigh_R",
+      "Shin_R",
+      "Metatarsus_R",
+      "RightFoot",
+      "Toe_R"
+    ],
+    "left_arm_chain": [
+      "Shoulder_L",
+      "UpperArm_L",
+      "Forearm_L",
+      "Hand_L"
+    ],
+    "right_arm_chain": [
+      "Shoulder_R",
+      "UpperArm_R",
+      "Forearm_R",
+      "Hand_R"
+    ]
+  },
+  "clips": [
+    {
+      "name": "Idle_Heavy",
+      "frames": 120,
+      "duration_s": 4.0,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Walk_Stomp",
+      "frames": 48,
+      "duration_s": 1.6,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 2.6
+    },
+    {
+      "name": "Charge_Run",
+      "frames": 24,
+      "duration_s": 0.8,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 7.0
+    },
+    {
+      "name": "Roar_Massive",
+      "frames": 96,
+      "duration_s": 3.2,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Look_Scan",
+      "frames": 120,
+      "duration_s": 4.0,
+      "fps": 30,
+      "loop": true,
+      "stride_speed_mps": 0.0
+    },
+    {
+      "name": "Bite_Snap",
+      "frames": 42,
+      "duration_s": 1.4,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0,
+      "hit_time_s": 0.55
+    },
+    {
+      "name": "Fence_Bash",
+      "frames": 60,
+      "duration_s": 2.0,
+      "fps": 30,
+      "loop": false,
+      "stride_speed_mps": 0.0,
+      "impact_time_s": 0.85
+    }
+  ],
+  "deformation_audit": {
+    "Idle_Heavy": {
+      "max_edge_stretch": 13.818,
+      "worst_stretch_frame": 42,
+      "min_z_m": 0.0004,
+      "max_z_m": 5.5994
+    },
+    "Walk_Stomp": {
+      "max_edge_stretch": 30.673,
+      "worst_stretch_frame": 42,
+      "min_z_m": -0.0,
+      "max_z_m": 5.8597
+    },
+    "Charge_Run": {
+      "max_edge_stretch": 43.237,
+      "worst_stretch_frame": 18,
+      "min_z_m": -0.0,
+      "max_z_m": 6.1507
+    },
+    "Roar_Massive": {
+      "max_edge_stretch": 30.217,
+      "worst_stretch_frame": 18,
+      "min_z_m": -0.0001,
+      "max_z_m": 7.4417
+    },
+    "Look_Scan": {
+      "max_edge_stretch": 16.925,
+      "worst_stretch_frame": 27,
+      "min_z_m": -0.0,
+      "max_z_m": 5.6959
+    },
+    "Bite_Snap": {
+      "max_edge_stretch": 22.74,
+      "worst_stretch_frame": 9,
+      "min_z_m": -0.0,
+      "max_z_m": 6.1702
+    },
+    "Fence_Bash": {
+      "max_edge_stretch": 37.003,
+      "worst_stretch_frame": 15,
+      "min_z_m": -0.0,
+      "max_z_m": 6.1293
+    }
+  },
+  "contact_sheets": [
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_1_anatomy_closeups.png",
+    "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex/trex_sheet_2_animations.png"
+  ]
+}

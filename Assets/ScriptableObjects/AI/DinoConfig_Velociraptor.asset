@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a848d02319224c468277b8c31640d63, type: 3}
+  m_Name: DinoConfig_Velociraptor
+  m_EditorClassIdentifier: Cretacea.AI::Cretacea.AI.DinoConfig
+  speciesType: 0
+  speciesKey: raptor
+  displayName: Velociraptor
+  navMeshAgentTypeName: Agent_Raptor
+  agentRadius: 0.45
+  agentHeight: 1.67
+  eyeHeight: 1.42
+  turnSpeedDegPerSec: 320
+  acceleration: 14.5
+  stoppingDistance: 0.85
+  stalkSpeed: 1.3
+  walkSpeed: 1.9
+  runSpeed: 6.2
+  stalkClipStrideSpeed: 1.9
+  walkClipStrideSpeed: 1.9
+  runClipStrideSpeed: 6.2
+  minAnimSpeedScale: 0.55
+  maxAnimSpeedScale: 1.42
+  turnInPlaceAngleThresholdDeg: 42
+  turnInPlaceMaxSpeed: 0.35
+  sightRangeMeters: 24
+  sightFovDegrees: 130
+  hearingSensitivity: 1.5
+  awarenessGainRate: 0.95
+  awarenessDecayRate: 0.22
+  alertThreshold: 0.45
+  huntThreshold: 1
+  alertHoldSeconds: 1.4
+  loseSightSeconds: 5
+  searchDurationSeconds: 7.5
+  attackRangeMeters: 2.7
+  killRangeMeters: 2.3
+  attackCooldownSeconds: 1.25
+  attackHitDelaySeconds: 0.35
+  canBashDoors: 1
+  doorBashRange: 2.15
+  doorBashCooldown: 1.1
+  footstepSoundId: raptor_step
+  alertSoundId: raptor_chirp
+  roarSoundId: raptor_screech
+  sniffSoundId: raptor_sniff
+  biteSoundId: raptor_bite
+  breathSoundId: raptor_breath_close
+  footstepTraumaMax: 0.04
+  footstepTraumaRadius: 8
+  roarTraumaMax: 0.22
+  roarTraumaRadius: 24
+  emitGroundFootprints: 0
+  idleClipName: Idle_Alert
+  stalkClipName: Stalk_Walk
+  walkClipName: Stalk_Walk
+  runClipName: Sprint_Run
+  turnLeftClipName: Turn_Left
+  turnRightClipName: Turn_Right
+  inspectClipName: Sniff_Inspect
+  roarClipName: Roar_Call
+  biteClipName: Bite_Lunge
+  bashClipName: Bite_Lunge
+  clipSpecs:
+  - clipName: Idle_Alert
+    naturalStrideSpeed: 0
+    durationSeconds: 3.6
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Stalk_Walk
+    naturalStrideSpeed: 1.9
+    durationSeconds: 0.8
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.22
+    - 0.72
+  - clipName: Sprint_Run
+    naturalStrideSpeed: 6.2
+    durationSeconds: 0.4667
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.18
+    - 0.68
+  - clipName: Sniff_Inspect
+    naturalStrideSpeed: 0
+    durationSeconds: 3.2
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Roar_Call
+    naturalStrideSpeed: 0
+    durationSeconds: 2.2
+    loop: 0
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes: []
+  - clipName: Bite_Lunge
+    naturalStrideSpeed: 0
+    durationSeconds: 1.1
+    loop: 0
+    hitOrImpactTimeSeconds: 0.35
+    footstepNormalizedTimes: []
+  - clipName: Turn_Left
+    naturalStrideSpeed: 0
+    durationSeconds: 0.8
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.45
+    - 0.85
+  - clipName: Turn_Right
+    naturalStrideSpeed: 0
+    durationSeconds: 0.8
+    loop: 1
+    hitOrImpactTimeSeconds: -1
+    footstepNormalizedTimes:
+    - 0.45
+    - 0.85
+  rigOverrides:
+    isQuadruped: 0
+    rootBone: Root
+    pelvisBone: Pelvis
+    headBone: Head
+    jawBone: Jaw
+    spineBones:
+    - Spine_01
+    - Spine_02
+    - Spine_03
+    neckBones:
+    - Neck_01
+    - Neck_02
+    - Neck_03
+    tailBones:
+    - Tail_01
+    - Tail_02
+    - Tail_03
+    - Tail_04
+    - Tail_05
+    - Tail_06
+    leftFootBone: LeftFoot
+    rightFootBone: RightFoot
+    leftFrontFootBone: 
+    rightFrontFootBone: 
+    maxNeckYawDeg: 65
+    maxNeckPitchDeg: 30
+    jawMaxOpenDeg: 36
+    jawAxisSign: 1
+    footGroundClearance: 0.015
+    maxPelvisDropMeters: 0.26
+    maxPelvisLiftMeters: 0.18
+    maxFootSlopeAlignDeg: 30

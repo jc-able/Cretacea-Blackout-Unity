@@ -1,0 +1,16 @@
+{
+  "name": "Cretacea.Audio",
+  "rootNamespace": "Cretacea.Audio",
+  "references": [
+    "Cretacea.Core"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,35 @@
+{
+  "species": "trex_skeleton",
+  "type": "static_fossil_prop",
+  "fbx": "TrexSkeleton.fbx",
+  "textures_dir": "Textures",
+  "textures": {
+    "albedo": "TrexSkeleton_Albedo.png",
+    "normal": "TrexSkeleton_Normal.png",
+    "metallic": "TrexSkeleton_Metallic.png",
+    "roughness": "TrexSkeleton_Roughness.png",
+    "ao": "TrexSkeleton_AO.png",
+    "hdrp_mask_map": "TrexSkeleton_MaskMap.png"
+  },
+  "verts": 25394,
+  "tris": 38120,
+  "unity_dimensions_m": {
+    "width_x": 3.439,
+    "height_y": 7.851,
+    "length_z": 12.0
+  },
+  "unity_bounds_min_m": [
+    -1.7194,
+    0.0,
+    -6.0
+  ],
+  "unity_bounds_max_m": [
+    1.7194,
+    7.8505,
+    6.0
+  ],
+  "pivot": "base_center_Y0",
+  "forward_axis_unity": "+Z",
+  "up_axis_unity": "+Y",
+  "contact_sheet": "~/.gemini/antigravity/brain/c65ff93a-3488-4543-9721-ede5fbad777f/scratch/dino_pipeline/renders/trex_skeleton/trex_skeleton_contact_sheet.png"
+}
